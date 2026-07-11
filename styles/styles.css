@@ -2,6 +2,7 @@
 
 :root {
   --background: #0f172a;
+  --color-primary--text: #f8fafc;
   /* Tipografía */
   --primary-text: "Poppins", sans-serif;
 }
