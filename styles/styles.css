@@ -1,12 +1,60 @@
+/* ==========================================
+   CSS VARIABLES
+   ========================================== */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
   --background: #0f172a;
   --color-primary--text: #f8fafc;
+  --color-secondary--text: #94a3b8;
+  --color-element: #38bdf8;
+  --color-bg--nav: #d9d9d9;
   /* Tipografía */
-  --primary-text: "Poppins", sans-serif;
+  --primary-font: "Poppins", sans-serif;
 }
 
+/* ==========================================
+   TYPOGRAPHY
+   Jerarquía y estilos de texto.
+   ========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  font-weight: 400;
+  color: var(--color-secondary--text);
+}
+
+.title {
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.sub-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+.text-description {
+  margin-top: 1.2rem;
+  line-height: 1.8;
+}
+
+/* ==========================================
+   LAYOUT
+   Contenedores, grids y espaciado.
+   ========================================== */
 .container {
   width: 100%;
   margin-inline: auto;
@@ -15,5 +63,29 @@
 
 .layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(2, minmax(0, 1fr)));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+
+.container--spacing {
+  padding-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+
+/* ==========================================
+   COMPONENTS
+   Botones, tarjetas, navbar, formularios.
+   ========================================== */
+
+/* ==========================================
+   SECTIONS
+   Hero, About, Services, Footer.
+   ========================================== */
+
+/* ==========================================
+   UTILITIES
+   Clases auxiliares reutilizables.
+   ========================================== */
+
+/* ==========================================
+   MEDIA QUERIES
+   ========================================== */
