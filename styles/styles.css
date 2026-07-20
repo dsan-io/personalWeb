@@ -9,7 +9,7 @@
   --color-primary--text: #f8fafc;
   --color-secondary--text: #94a3b8;
   --color-element: #38bdf8;
-  --color-bg--nav: #d9d9d9;
+  --color-bg--nav: #d9d9d922;
   /* Tipografía */
   --primary-font: "Poppins", sans-serif;
 }
@@ -75,7 +75,31 @@ p {
    COMPONENTS
    Botones, tarjetas, navbar, formularios.
    ========================================== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding: 1.2rem;
+  background-color: var(--color-bg--nav);
+}
 
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 4.6rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  color: var(--color-primary--text);
+  background-color: var(--color-element);
+}
 /* ==========================================
    SECTIONS
    Hero, About, Services, Footer.
