@@ -105,6 +105,15 @@ p {
    Hero, About, Services, Footer.
    ========================================== */
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  min-height: 100vh;
+}
+
 /* ==========================================
    UTILITIES
    Clases auxiliares reutilizables.
@@ -113,3 +122,9 @@ p {
 /* ==========================================
    MEDIA QUERIES
    ========================================== */
+/* En Laptops (más de 1200px de pantalla) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; /* Estándar clásico */
+  }
+}
