@@ -56,7 +56,7 @@ p {
    Contenedores, grids y espaciado.
    ========================================== */
 .container {
-  width: 100%;
+  max-width: 100%;
   margin-inline: auto;
   padding-inline: 2rem;
 }
@@ -67,8 +67,7 @@ p {
 }
 
 .container--spacing {
-  padding-bottom: 3rem;
-  margin-bottom: 4rem;
+  padding: 40px 24px;
 }
 
 /* ==========================================
@@ -107,11 +106,31 @@ p {
 
 .hero {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  min-height: 70vh;
+}
+
+.hero__content {
+  flex: 1;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   gap: 1.5rem;
-  min-height: 80vh;
+}
+
+.hero__image {
+  background:
+    url(../assets/images/image_profile.png) bottom / cover no-repeat,
+    linear-gradient(to left, #1f6fbf, #3aa0f3);
+  min-height: 800px;
+  flex: 1;
+  border-radius: 1rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 
 /* ==========================================
@@ -123,8 +142,8 @@ p {
    MEDIA QUERIES
    ========================================== */
 /* En Laptops (más de 1200px de pantalla) */
-@media (min-width: 1200px) {
+@media (min-width: 1488px) {
   .container {
-    max-width: 1140px; /* Estándar clásico */
+    max-width: 1280px; /* Estándar clásico */
   }
 }
