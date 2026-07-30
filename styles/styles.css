@@ -99,17 +99,20 @@ p {
   color: var(--color-primary--text);
   background-color: var(--color-element);
 }
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
 /* ==========================================
    SECTIONS
    Hero, About, Services, Footer.
    ========================================== */
 
 .hero {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
   min-height: 70vh;
 }
 
@@ -128,9 +131,23 @@ p {
   min-height: 800px;
   flex: 1;
   border-radius: 1rem;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+}
+
+.about__image {
+  background:
+    url(../assets/images/image_about.png) center / 90% no-repeat,
+    linear-gradient(to left, #1f6fbf, #3aa0f3);
+  min-height: 600px;
+  flex: 1;
+  border-radius: 1rem;
+}
+
+.about__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 /* ==========================================
