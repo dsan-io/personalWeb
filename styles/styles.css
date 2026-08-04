@@ -107,6 +107,23 @@ p {
   align-items: center;
   gap: 1.5rem;
 }
+
+.card {
+  background-color: var(--color-bg--nav);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 445px;
+  height: 601px;
+}
+
+.card_image {
+  width: 100%;
+  min-height: 489px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
 /* ==========================================
    SECTIONS
    Hero, About, Services, Footer.
@@ -159,8 +176,16 @@ p {
    MEDIA QUERIES
    ========================================== */
 /* En Laptops (más de 1200px de pantalla) */
-@media (min-width: 1488px) {
+@media (min-width: 1200px) {
   .container {
-    max-width: 1280px; /* Estándar clásico */
+    max-width: 1280px;
+    /* Estándar clásico */
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1480px;
+    /* Estándar clásico */
   }
 }

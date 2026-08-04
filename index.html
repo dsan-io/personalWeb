@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
+
   <body>
     <header class="header">
       <h1 class="header__logo">Leonardo Sandoval</h1>
@@ -21,7 +22,7 @@
     <main>
       <section class="container hero content container--spacing">
         <div class="hero__content">
-          <h1>Bienvenido a mi nombre es Leonardo!</h1>
+          <h1 class="title">Bienvenido a mi nombre es Leonardo!</h1>
           <p>
             Desarrollador en formación en Ingeniería en Sistemas Computacionales
           </p>
@@ -42,54 +43,72 @@
       <section class="container content about container--spacing">
         <div class="about__image"></div>
         <div class="about__content">
-          <h2>Sobre mí</h2>
-          <p>
+          <h2 class="sub-title">Sobre mí</h2>
+          <p class="text-description">
             Soy un apasionado desarrollador de software con experiencia en
             desarrollo web y móvil. Me encanta aprender nuevas tecnologías y
             enfrentar desafíos que me permitan crecer profesionalmente.
           </p>
-          <p>
+          <p class="text-description">
             Mi objetivo es contribuir al desarrollo de soluciones innovadoras y
             eficientes, trabajando en equipo y aplicando las mejores prácticas
             de programación.
           </p>
         </div>
       </section>
-      <article>
-        <h2>Projectos</h2>
-        <div>
-          <h3>Proyecto 1</h3>
-        </div>
-        <div>
-          <h3>Proyecto 2</h3>
-        </div>
-        <div>
-          <h3>Proyecto 3</h3>
-        </div>
+      <article class="container container--spacing">
+        <h2 class="sub-title">Projectos</h2>
+        <section class="content container--spacing">
+          <div class="card">
+            <picture>
+              <a
+                href="https://github.com/dsan-io/vaccine_kataCSS"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="/assets/images/vaccineOrginalKata.webp"
+                  alt="Maquetación Landing Page"
+                  class="card_image"
+              /></a>
+            </picture>
+            <p class="text-description">Web Development</p>
+            <h3>Vaccination Landing Page</h3>
+          </div>
+          <div class="card">
+            <h3>Proyecto 2</h3>
+          </div>
+          <div class="card">
+            <h3>Proyecto 3</h3>
+          </div>
+        </section>
       </article>
-      <section>
-        <h2>Contacto</h2>
-        <p>
-          Si deseas ponerte en contacto conmigo, puedes enviarme un correo
-          electrónico a
-          <a href="mailto:leonardo.sandoval@example.com"
-            >leonardo.sandoval@example.com</a
-          >
-        </p>
-        <p>
-          GitHub:
-          <a href="https://github.com/dsan-io" target="_blank"
-            >leonardosandoval</a
-          >
-        </p>
-        <p>
-          LinkedIn:
-          <a href="https://linkedin.com/in/leonardosandoval" target="_blank"
-            >in/leonardosandoval</a
-          >
-        </p>
-        <p>Redes Sociales:</p>
-        <button class="btn">Enviar mensaje</button>
+      <section class="container container--spacing">
+        <h2 class="sub-title">Contacto</h2>
+        <div class="content container--spacing">
+          <p>
+            Si deseas ponerte en contacto conmigo, puedes enviarme un correo
+            electrónico a
+            <a href="mailto:leonardo.sandoval@example.com"
+              >leonardo.sandoval@example.com</a
+            >
+          </p>
+          <p>Redes Sociales:</p>
+        </div>
+        <div class="content">
+          <p>
+            GitHub:
+            <a href="https://github.com/dsan-io" target="_blank"
+              >leonardosandoval</a
+            >
+          </p>
+          <p>
+            LinkedIn:
+            <a href="https://linkedin.com/in/leonardosandoval" target="_blank"
+              >in/leonardosandoval</a
+            >
+          </p>
+          <button class="btn">Enviar mensaje</button>
+        </div>
       </section>
       <footer>
         <p>&copy; 2026 Leonardo Sandoval. All rights reserved.</p>
