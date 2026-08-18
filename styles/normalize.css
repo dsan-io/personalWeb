@@ -17,27 +17,6 @@
   --secondary-text: Verdana;
 }
 
-/* Reseteamos los margin y paddings de todas las etiquetas */
-/* Cuidado con el uso del *. Normalmente se se debe de usar en selectores al maquetar. Pero usar alguno para resetear y evitarnos problemas no es mala opción. Tú eliges. */
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
-/* Evitamos problemas con las imagenes */
-img,
-picture,
-video,
-iframe,
-figure {
-  max-width: 100%;
-  width: 100%;
-  display: block;
-}
-
 /* Reseteamos los enlaces para funcionar como cajas... */
 a {
   display: block;
@@ -100,6 +79,6 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 1.6;
-  background-color: var(--background);
+  background-color: var(--color-main-bg);
   color: var(--color-primary--text);
 }
