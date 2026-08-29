@@ -5,40 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leonardo Sandoval</title>
 
-    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
   <body>
-    <header class="header">
-      <h1 class="header__logo">Leonardo Sandoval</h1>
-      <nav class="header__menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">Sobre mí</a>
-        <a href="projects.html">Proyectos</a>
-        <a href="contact.html">Contacto</a>
-      </nav>
+    <header>
+      <div class="header wrapper">
+        <h1 class="header__logo fix-this">Leonardo Sandoval</h1>
+        <nav>
+          <ul class="header__menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
+            <li><a href="projects.html">Proyectos</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="container hero content container--spacing">
-        <div class="hero__content">
-          <h1 class="title">Bienvenido a mi nombre es Leonardo!</h1>
-          <p>
-            Desarrollador en formación en Ingeniería en Sistemas Computacionales
-          </p>
+      <section class="wrapper container--spacing">
+        <div class="grid-layout hero">
+          <div class="hero__content">
+            <h1>Bienvenido a mi nombre es Leonardo!</h1>
+            <p>
+              Desarrollador en formación en Ingeniería en Sistemas
+              Computacionales
+            </p>
 
-          <p>
-            He desarrollado aplicaciones móviles para Android utilizando Java y
-            Kotlin, así como aplicaciones para iOS con Objective-C y Swift.
-            También cuento con experiencia en la creación de sitios web con
-            HTML, CSS y JavaScript. Me gusta aportar soluciones prácticas,
-            aprender de manera continua y seguir fortaleciendo mis habilidades
-            como desarrollador.
-          </p>
-          <button class="btn">Ver proyectos</button>
-          <button class="btn">Conctar</button>
+            <p>
+              He desarrollado aplicaciones móviles para Android utilizando Java
+              y Kotlin, así como aplicaciones para iOS con Objective-C y Swift.
+              También cuento con experiencia en la creación de sitios web con
+              HTML, CSS y JavaScript. Me gusta aportar soluciones prácticas,
+              aprender de manera continua y seguir fortaleciendo mis habilidades
+              como desarrollador.
+            </p>
+            <div class="hero__buttons">
+              <a href="#projects" class="btn">Ver proyectos</a>
+              <a href="#contact" class="btn btn--secondary">Contáctame</a>
+            </div>
+          </div>
+          <div class="hero__image">
+            <img
+              src="/assets/images/image_profile.webp"
+              alt="Imagen de Leonardo Sandoval"
+              class="image__profile"
+            />
+          </div>
         </div>
-        <div class="hero__image"></div>
       </section>
       <section class="container content about container--spacing">
         <div class="about__image"></div>
@@ -56,7 +70,7 @@
           </p>
         </div>
       </section>
-      <article class="container container--spacing">
+      <article class="container container--spacing" id="projects">
         <h2 class="sub-title">Projectos</h2>
         <section class="content container--spacing">
           <div class="card">
@@ -85,14 +99,14 @@
       <section class="container container--spacing">
         <h2 class="sub-title">Contacto</h2>
         <div class="content container--spacing">
-          <p>
+          <p class="text-description">
             Si deseas ponerte en contacto conmigo, puedes enviarme un correo
             electrónico a
             <a href="mailto:leonardo.sandoval@example.com"
               >leonardo.sandoval@example.com</a
             >
           </p>
-          <p>Redes Sociales:</p>
+          <p class="text-description">Redes Sociales:</p>
         </div>
         <div class="content">
           <p>
