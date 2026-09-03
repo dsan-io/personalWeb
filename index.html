@@ -41,7 +41,7 @@
               <a href="#projects" class="btn btn--secondary">Proyectos</a>
             </div>
           </div>
-          <div class="hero__image hero">
+          <div class="hero__image">
             <img
               src="/assets/images/image_profile.webp"
               alt="Imagen de Leonardo Sandoval"
@@ -96,7 +96,7 @@
             <ul class="skills__list">
               <li class="skills__item">Android Studio</li>
               <li class="skills__item">iOS</li>
-              <li class="skills__item">Visual Studio Code</li>
+              <li class="skills__item">HTML & CSS</li>
             </ul>
             <h4>Herramientas</h4>
             <ul class="skills__list">
@@ -106,22 +106,45 @@
           </section>
         </div>
       </section>
-      <article class="container container--spacing" id="projects">
+      <article class="wrapper container--spacing" id="projects">
         <h2 class="sub-title">Projectos</h2>
-        <section class="grid-layout-responsive container--spacing">
+        <section class="grid-layout-responsive">
           <div class="card">
-            <picture>
-              <a
-                href="https://github.com/dsan-io/vaccine_kataCSS"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><img
-                  src="/assets/images/vaccineOrginalKata.webp"
-                  alt="Maquetación Landing Page"
-              /></a>
-            </picture>
-            <p class="text-description">Web Development</p>
-            <h3>Vaccination Landing Page</h3>
+            <img
+              src="/assets/images/vaccineOrginalKata.webp"
+              alt="Maquetación Landing Page"
+            />
+            <div class="card__description">
+              <h4>Vaccination Landing Page</h4>
+              <p class="text-description">
+                Página desarrollada como práctica de maquetación y diseño
+                responsive, enfocada en estructura semántica, layout y
+                adaptación a diferentes tamaños de pantalla.
+              </p>
+              <div class="skills">
+                <h4>Tecnologías</h4>
+                <ul class="skills__list">
+                  <li class="skills__item">HTML</li>
+                  <li class="skills__item">CSS</li>
+                </ul>
+              </div>
+              <div class="card__buttons">
+                <a
+                  href="https://dsan-io.github.io/vaccine_kataCSS/"
+                  class="btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Ver proyecto</a
+                >
+                <a
+                  href="https://github.com/dsan-io/vaccine_kataCSS"
+                  class="btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </div>
           </div>
           <div class="card">
             <h3>Proyecto 2</h3>
@@ -131,7 +154,7 @@
           </div>
         </section>
       </article>
-      <section class="container container--spacing">
+      <section class="wrapper container--spacing">
         <h2 class="sub-title">Contacto</h2>
         <div class="content container--spacing">
           <p class="text-description">
@@ -162,7 +185,7 @@
           </p>
         </div>
       </section>
-      <footer>
+      <footer class="footer">
         <p>&copy; 2026 Leonardo Sandoval. All rights reserved.</p>
       </footer>
     </main>
