@@ -11,6 +11,14 @@
 
 */
 
+/* Reset Custom Properties */
+:root {
+  --black: #393939;
+  /* Tipografía */
+  --primary-text: Helvetica, Arial, sans-serif;
+  --secondary-text: Verdana;
+}
+
 /* Box-sizing model */
 *,
 *::before,
