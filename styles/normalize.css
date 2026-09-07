@@ -10,13 +10,6 @@
     👉 Unificar la tipografía de todas las etiquetas de una web
 
 */
-/* Aquí definimos las Custom properties */
-:root {
-  --black: #393939;
-  /* Tipografía */
-  --primary-text: Helvetica, Arial, sans-serif;
-  --secondary-text: Verdana;
-}
 
 /* Box-sizing model */
 *,

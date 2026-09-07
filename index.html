@@ -19,8 +19,8 @@
 
   <body>
     <header class="site-header">
-      <div class="nav wrapper">
-        <a href="index.html" class="header__logo">Leonardo Sandoval</a>
+      <div class="site-header__nav wrapper">
+        <a href="index.html" class="site-header__logo">Leonardo Sandoval</a>
         <nav aria-label="Navegación principal">
           <ul class="nav__list">
             <li><a href="#sobreMi" class="nav__item">Sobre mí</a></li>
@@ -52,7 +52,7 @@
           <div>
             <img
               src="./assets/images/image_profile.webp"
-              alt="Leonardo Sandoval, desarrollador en formación en Ingeniería en Sistemas Computacionales"
+              alt="Fotografía de Leonardo Sandoval"
               width="1200"
               height="675"
               class="image-profile"
@@ -86,7 +86,7 @@
             mis conocimientos.
           </p>
         </div>
-        <div>
+        <div class="about__skills">
           <h3>Tecnologías</h3>
           <h4>Lenguajes</h4>
           <ul class="skills__list">
@@ -111,7 +111,7 @@
       </section>
       <section class="wrapper container--spacing" id="proyectos">
         <h2>Proyectos</h2>
-        <section class="grid-layout-responsive">
+        <div class="grid-layout-responsive">
           <article class="card">
             <img
               src="./assets/images/vaccineOrginalKata.webp"
@@ -155,7 +155,7 @@
           </article>
           <div class="card"></div>
           <div class="card"></div>
-        </section>
+        </div>
       </section>
       <section class="wrapper container--spacing" id="contacto">
         <h2>Contacto</h2>
@@ -192,13 +192,7 @@
           </ul>
         </div>
         <!-- Definir que acción y a donde redirigir el botón de enviar mensaje -->
-        <a
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="mailto:l.sandoval.dev@gmail.com"
-          >Enviar mensaje</a
-        >
+        <a class="btn" href="mailto:l.sandoval.dev@gmail.com">Enviar mensaje</a>
       </section>
       <footer class="footer">
         <p>&copy; 2026 Leonardo Sandoval. Todos los derechos reservados.</p>
