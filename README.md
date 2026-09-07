@@ -1,6 +1,6 @@
 # 🌐 Portafolio Personal — Leonardo Sandoval
 
-![App Screenshot](https://github.com/dsan-io/personalWeb/tree/main/assets/images/webPage.webp)
+![App Screenshot](https://github.com/dsan-io/personalWeb/blob/main/assets/images/webPage.webp)
 
 > ⚠️ **Proyecto en construcción.** Este sitio está en desarrollo activo y recibe mejoras continuas. Este README es provisional y se irá actualizando conforme el proyecto avance.
 
