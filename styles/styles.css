@@ -1,10 +1,9 @@
 @import url("./normalize.css") layer(reset);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 @layer global, components, utilities;
 
 @layer global {
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
   /* Fonts */
   :root {
     --fs-14: calc(14 / 16 * 1rem);
@@ -19,6 +18,8 @@
     --font-size-h1: var(--fs-42);
     --font-size-h2: var(--fs-36);
     --font-size-h3: var(--fs-24);
+    --font-size-h4: var(--fs-16);
+    --font-size-p: var(--fs-14);
 
     @media (width >= calc(600 / 16 * 1rem)) {
       --font-size-topnav: var(--fs-16);
@@ -42,6 +43,8 @@
 
     --c-sky-300: #87ceeb;
     --c-sky-400: #38bdf8;
+    --c-sky-600: #0284c7;
+    --c-sky-700: #0369a1;
 
     --color-main-bg: var(--c-slate-950);
 
@@ -53,8 +56,14 @@
     --color-secondary--text: var(--c-slate-400);
     --color-muted--text: var(--c-slate-300);
 
-    --color-accent-primary: var(--c-sky-300);
-    --color-accent-primary--hover: var(--c-sky-400);
+    --btn-bg: var(--c-sky-300);
+    --btn-text: var(--c-slate-950);
+
+    --btn-bg--hover: var(--c-sky-400);
+    --btn-text--hover: var(--c-slate-950);
+
+    --color-accent-primary: var(--c-sky-600);
+    --color-accent-primary--hover: var(--c-sky-700);
   }
 
   h1 {
@@ -67,24 +76,13 @@
     font-size: var(--font-size-h3);
   }
 
+  h4 {
+    font-size: var(--font-size-h4);
+  }
+
   p {
-    font-weight: 400;
+    font-size: var(--font-size-p);
     color: var(--color-secondary--text);
-  }
-
-  .title {
-    font-size: 4rem;
-    font-weight: 800;
-  }
-
-  .sub-title {
-    font-size: 2.2rem;
-    font-weight: 800;
-    text-wrap: balance;
-  }
-
-  .text-description {
-    /* margin-top: 1.2rem; */
     line-height: 1.8;
   }
 
@@ -101,10 +99,6 @@
 
   .container--spacing {
     margin-block: 4rem;
-  }
-
-  .hero {
-    min-height: 70vh;
   }
 }
 
@@ -123,9 +117,14 @@
     &:hover {
       color: var(--color-accent-primary--hover);
     }
+
+    &:focus {
+      outline: 2px solid var(--color-accent-primary);
+      outline-offset: 2px;
+    }
   }
 
-  header {
+  .site-header {
     background-color: var(--color-bg--nav);
     font-size: var(--font-size-topnav);
   }
@@ -142,7 +141,6 @@
     display: flex;
     align-items: center;
     gap: 4.6rem;
-    border-color: #f8fafc;
   }
 
   @media screen and (max-width: 768px) {
@@ -157,17 +155,17 @@
     border-radius: 0.5rem;
     font-weight: 600;
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    color: var(--color-primary--text);
-    background-color: var(--color-accent-primary);
+    color: var(--btn-text);
+    background-color: var(--btn-bg);
 
     &:hover {
-      background-color: var(--color-primary--text);
-      color: var(--color-accent-primary--hover);
+      background-color: var(--btn-bg--hover);
+      color: var(--btn-text--hover);
+      transition: all 0.3s ease-in-out;
     }
 
     &:focus {
-      outline: 2px solid var(--color-accent-primary--hover);
+      outline: 2px solid var(--color-accent-primary);
       outline-offset: 2px;
     }
 
@@ -189,9 +187,15 @@
     overflow: hidden;
   }
 
-  .image__resource {
+  .image-profile {
     height: 100%;
     border-radius: 1rem;
+  }
+
+  .card__image {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
   }
 
   .hero__buttons {
@@ -205,7 +209,6 @@
   }
 
   .skills__item {
-    /* padding: 0.1rem 0.2rem; */
     border-radius: 0.5rem;
     background-color: var(--color-bg--tag);
     color: var(--color-muted--text);
@@ -218,18 +221,6 @@
 }
 
 @layer utilities {
-  .fix-this {
-    all: unset;
-  }
-  .visually-hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-  }
-
   /* * {
     outline: 1px solid red !important;
   } */

@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="site-header">
       <div class="nav wrapper">
         <a href="index.html" class="header__logo">Leonardo Sandoval</a>
         <nav aria-label="Navegación principal">
@@ -46,16 +46,16 @@
             </p>
             <div class="hero__buttons">
               <a href="#sobreMi" class="btn">Sobre mí</a>
-              <a href="#proyectos" class="btn btn--secondary">Proyectos</a>
+              <a href="#proyectos" class="btn">Proyectos</a>
             </div>
           </div>
-          <div class="hero__image">
+          <div>
             <img
-              src="/assets/images/image_profile.webp"
-              alt="Imagen de perfil sobre mi perfil profesional"
-              class="image__resource"
+              src="./assets/images/image_profile.webp"
+              alt="Leonardo Sandoval, desarrollador en formación en Ingeniería en Sistemas Computacionales"
               width="1200"
               height="675"
+              class="image-profile"
             />
           </div>
         </div>
@@ -86,7 +86,7 @@
             mis conocimientos.
           </p>
         </div>
-        <div class="skills">
+        <div>
           <h3>Tecnologías</h3>
           <h4>Lenguajes</h4>
           <ul class="skills__list">
@@ -109,16 +109,17 @@
           </ul>
         </div>
       </section>
-      <article class="wrapper container--spacing" id="proyectos">
+      <section class="wrapper container--spacing" id="proyectos">
         <h2>Proyectos</h2>
         <section class="grid-layout-responsive">
           <article class="card">
             <img
-              src="/assets/images/vaccineOrginalKata.webp"
+              src="./assets/images/vaccineOrginalKata.webp"
               alt="Imagen ilustrativa del proyecto Vaccine Landing Page"
               width="400"
               height="300"
               loading="lazy"
+              class="card__image"
             />
             <div>
               <h3>Vaccination Landing Page</h3>
@@ -127,7 +128,7 @@
                 responsive, enfocada en estructura semántica, layout y
                 adaptación a diferentes tamaños de pantalla.
               </p>
-              <div class="skills">
+              <div>
                 <h4>Tecnologías</h4>
                 <ul class="skills__list">
                   <li class="skills__item">HTML</li>
@@ -155,7 +156,7 @@
           <div class="card"></div>
           <div class="card"></div>
         </section>
-      </article>
+      </section>
       <section class="wrapper container--spacing" id="contacto">
         <h2>Contacto</h2>
         <p>
@@ -184,17 +185,18 @@
             </li>
             <li>
               Email:
-              <a
-                href="mailto:leonardo.sandoval@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                >leonardo.sandoval@gmail.com</a
+              <a href="mailto:l.sandoval.dev@gmail.com"
+                >l.sandoval.dev@gmail.com</a
               >
             </li>
           </ul>
         </div>
         <!-- Definir que acción y a donde redirigir el botón de enviar mensaje -->
-        <a class="btn" target="_blank" rel="noopener noreferrer"
+        <a
+          class="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="mailto:l.sandoval.dev@gmail.com"
           >Enviar mensaje</a
         >
       </section>
