@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio de Leonardo Sandoval, desarrollador en formación en Ingeniería en Sistemas Computacionales, enfocado en desarrollo web."
+    />
+    <meta
+      name="keywords"
+      content="Leonardo Sandoval, portafolio, desarrollador, aplicaciones móviles, sitios web, Android, iOS, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Leonardo Sandoval" />
     <title>Leonardo Sandoval</title>
 
     <link rel="stylesheet" href="styles/styles.css" />
@@ -11,13 +20,12 @@
   <body>
     <header>
       <div class="nav wrapper">
-        <h1 class="header__logo fix-this">Leonardo Sandoval</h1>
-        <nav>
+        <a href="index.html" class="header__logo">Leonardo Sandoval</a>
+        <nav aria-label="Navegación principal">
           <ul class="nav__list">
-            <!-- <li><a href="index.html" class="nav__item">Home</a></li> -->
-            <li><a href="#aboutMe" class="nav__item">Sobre mí</a></li>
-            <li><a href="#projects" class="nav__item">Proyectos</a></li>
-            <li><a href="#contact" class="nav__item">Contacto</a></li>
+            <li><a href="#sobreMi" class="nav__item">Sobre mí</a></li>
+            <li><a href="#proyectos" class="nav__item">Proyectos</a></li>
+            <li><a href="#contacto" class="nav__item">Contacto</a></li>
           </ul>
         </nav>
       </div>
@@ -25,7 +33,7 @@
     <main>
       <section class="wrapper container--spacing">
         <div class="grid-layout-responsive">
-          <div class="hero__content">
+          <div>
             <h1>Leonardo Sandoval</h1>
             <p>
               Desarrollador en formación en Ingeniería en Sistemas
@@ -37,53 +45,48 @@
               Android, iOS y tecnologías web como HTML, CSS y JavaScript.
             </p>
             <div class="hero__buttons">
-              <a href="#aboutMe" class="btn">Sobre mi</a>
-              <a href="#projects" class="btn btn--secondary">Proyectos</a>
+              <a href="#sobreMi" class="btn">Sobre mí</a>
+              <a href="#proyectos" class="btn btn--secondary">Proyectos</a>
             </div>
           </div>
           <div class="hero__image">
             <img
               src="/assets/images/image_profile.webp"
-              alt="Imagen de Leonardo Sandoval"
+              alt="Imagen de perfil sobre mi perfil profesional"
               class="image__resource"
+              width="1200"
+              height="675"
             />
           </div>
         </div>
       </section>
       <section
         class="wrapper container--spacing grid-layout-responsive"
-        id="aboutMe"
+        id="sobreMi"
       >
-        <!-- <div class="about__image">
-          <img
-            src="./assets/images/image_about.webp"
-            alt="Imagen de Leonardo Sandoval"
-            class="image__resource"
-          />
-        </div> -->
         <div class="about__content">
-          <h2 class="sub-title">Sobre mí</h2>
-          <p class="text-description">
+          <h2>Sobre mí</h2>
+          <p>
             Soy estudiante de
             <strong>Ingeniería en Sistemas Computacionales</strong> en la UVEG,
             actualmente enfocado en completar mi formación y dar el siguiente
             paso hacia el ámbito profesional.
           </p>
-          <p class="text-description formation">
+          <p>
             Durante mi formación académica he trabajado con diferentes
             tecnologías y áreas de desarrollo, principalmente en aplicaciones
             móviles para Android e iOS. Actualmente estoy enfocando parte de mi
             aprendizaje en desarrollo web, fortaleciendo mis fundamentos de
             HTML, CSS y JavaScript.
           </p>
-          <p class="text-description interests">
+          <p>
             Me interesa seguir desarrollándome como programador, resolver
             problemas mediante soluciones prácticas y continuar adquiriendo
             experiencia a través de proyectos que me permitan aplicar y ampliar
             mis conocimientos.
           </p>
         </div>
-        <div class="text-description skills">
+        <div class="skills">
           <h3>Tecnologías</h3>
           <h4>Lenguajes</h4>
           <ul class="skills__list">
@@ -106,17 +109,20 @@
           </ul>
         </div>
       </section>
-      <article class="wrapper container--spacing" id="projects">
-        <h2 class="sub-title">Projectos</h2>
+      <article class="wrapper container--spacing" id="proyectos">
+        <h2>Proyectos</h2>
         <section class="grid-layout-responsive">
-          <div class="card">
+          <article class="card">
             <img
               src="/assets/images/vaccineOrginalKata.webp"
-              alt="Maquetación Landing Page"
+              alt="Imagen ilustrativa del proyecto Vaccine Landing Page"
+              width="400"
+              height="300"
+              loading="lazy"
             />
-            <div class="card__description">
-              <h4>Vaccination Landing Page</h4>
-              <p class="text-description">
+            <div>
+              <h3>Vaccination Landing Page</h3>
+              <p>
                 Página desarrollada como práctica de maquetación y diseño
                 responsive, enfocada en estructura semántica, layout y
                 adaptación a diferentes tamaños de pantalla.
@@ -145,50 +151,55 @@
                 >
               </div>
             </div>
-          </div>
-          <div class="card">
-            <h3>Proyecto 2</h3>
-          </div>
-          <div class="card">
-            <h3>Proyecto 3</h3>
-          </div>
+          </article>
+          <div class="card"></div>
+          <div class="card"></div>
         </section>
       </article>
-      <section class="wrapper container--spacing" id="contact">
-        <h2 class="sub-title">Contacto</h2>
-        <div class="content container--spacing">
-          <p class="text-description">
-            Si tienes un proyecto, una oportunidad profesional o simplemente
-            quieres conocer más sobre mi trabajo, puedes contactarme:
-          </p>
-          <a href="mailto:leonardo.sandoval@example.com" class="btn"
-            >Enviar mensaje</a
-          >
-          <p class="text-description">Redes Sociales:</p>
+      <section class="wrapper container--spacing" id="contacto">
+        <h2>Contacto</h2>
+        <p>
+          Si tienes un proyecto, una oportunidad profesional o simplemente
+          quieres conocer más sobre mi trabajo, puedes contactarme:
+        </p>
+        <div>
+          <h3>Redes de Contacto:</h3>
+          <ul>
+            <li>
+              GitHub:<a
+                href="https://github.com/dsan-io"
+                target="_blank"
+                rel="noopener noreferrer"
+                >dsan-io</a
+              >
+            </li>
+            <li>
+              LinkedIn:
+              <a
+                href="https://linkedin.com/in/leonardosandoval"
+                target="_blank"
+                rel="noopener noreferrer"
+                >in/leonardosandoval</a
+              >
+            </li>
+            <li>
+              Email:
+              <a
+                href="mailto:leonardo.sandoval@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >leonardo.sandoval@gmail.com</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="content">
-          <p>
-            GitHub:
-            <a href="https://github.com/dsan-io" target="_blank"
-              >leonardosandoval</a
-            >
-          </p>
-          <p>
-            LinkedIn:
-            <a href="https://linkedin.com/in/leonardosandoval" target="_blank"
-              >in/leonardosandoval</a
-            >
-          </p>
-          <p>
-            Email:
-            <a href="mailto:leonardo.sandoval@example.com"
-              >leonardo.sandoval@example.com</a
-            >
-          </p>
-        </div>
+        <!-- Definir que acción y a donde redirigir el botón de enviar mensaje -->
+        <a class="btn" target="_blank" rel="noopener noreferrer"
+          >Enviar mensaje</a
+        >
       </section>
       <footer class="footer">
-        <p>&copy; 2026 Leonardo Sandoval. All rights reserved.</p>
+        <p>&copy; 2026 Leonardo Sandoval. Todos los derechos reservados.</p>
       </footer>
     </main>
   </body>
