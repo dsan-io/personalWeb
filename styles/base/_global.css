@@ -1,0 +1,31 @@
+.lucide {
+  color: var(--c-sky-300);
+  width: 16px;
+  height: 16px;
+  stroke-width: 1px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: center;
+}
+
+@media (width >= 40rem) {
+  .hero {
+    min-height: calc(70svh - 80px);
+  }
+}
+
+.hero__buttons {
+  margin-top: 2rem;
+}
+
+.image-profile {
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.footer {
+  background-color: var(--color-bg--nav);
+  padding: 1rem;
+}

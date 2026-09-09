@@ -161,46 +161,57 @@
           <div class="card"></div>
         </div>
       </section>
-      <section class="wrapper container--spacing" id="contacto">
-        <h2 aria-label="Contacto">Contacto</h2>
-        <p>
-          Si tienes un proyecto, una oportunidad profesional o simplemente
-          quieres conocer más sobre mi trabajo, puedes contactarme:
-        </p>
-        <div>
-          <h3>Redes de Contacto:</h3>
-          <ul>
-            <li>
-              GitHub:<a
+      <section
+        class="wrapper grid-layout-responsive container--spacing"
+        id="contacto"
+      >
+        <div class="social-networks">
+          <h3 aria-label="Contacto">Contacto</h3>
+          <p>
+            Si tienes un proyecto en desarrollo, una propuesta profesional de
+            empleo o simplemente quieres intercambiar ideas, no dudes en
+            contactarme. Estoy abierto a nuevas oportunidades y colaboraciones.
+          </p>
+          <h4>Redes de Contacto:</h4>
+          <div class="social-networks__list">
+            <div class="social-networks__item">
+              <i data-lucide="code-xml"></i>
+              GitHub<a
                 href="https://github.com/dsan-io"
                 target="_blank"
                 rel="noopener noreferrer"
                 >dsan-io</a
               >
-            </li>
-            <li>
-              LinkedIn:
+            </div>
+            <div>
+              LinkedIn
               <a
                 href="https://linkedin.com/in/leonardosandoval"
                 target="_blank"
                 rel="noopener noreferrer"
                 >in/leonardosandoval</a
               >
-            </li>
-            <li>
-              Email:
-              <a href="mailto:l.sandoval.dev@gmail.com"
+            </div>
+            <div>
+              Email<a href="mailto:l.sandoval.dev@gmail.com"
                 >l.sandoval.dev@gmail.com</a
               >
-            </li>
-          </ul>
+            </div>
+          </div>
+          <!-- Definir que acción y a donde redirigir el botón de enviar mensaje -->
+          <a class="btn" href="mailto:l.sandoval.dev@gmail.com"
+            >Enviar mensaje</a
+          >
         </div>
-        <!-- Definir que acción y a donde redirigir el botón de enviar mensaje -->
-        <a class="btn" href="mailto:l.sandoval.dev@gmail.com">Enviar mensaje</a>
+        <div></div>
       </section>
       <footer class="footer">
         <p>&copy; 2026 Leonardo Sandoval. Todos los derechos reservados.</p>
       </footer>
     </main>
   </body>
+  <script src="https://unpkg.com/lucide@1.43.0"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </html>

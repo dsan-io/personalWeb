@@ -1,0 +1,23 @@
+.wrapper {
+  max-width: min(calc(100% - 48px), calc(1200 / 16 * 1rem));
+  margin-inline: auto;
+}
+
+.grid-layout-responsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.container--spacing {
+  margin-block: 4rem;
+}
+
+@media (width >= 40rem) {
+  /* ~640px, ajusta al breakpoint que uses */
+  .hero .grid-layout-responsive {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 3rem;
+  }
+}
