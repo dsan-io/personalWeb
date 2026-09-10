@@ -23,7 +23,7 @@
 }
 
 .hero__eyebrow {
-  color: var(--c-sky-400);
+  color: var(--color-accent-secondary);
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -31,7 +31,7 @@
 }
 
 .text-accent {
-  color: var(--c-sky-400);
+  color: var(--color-accent-primary);
 }
 
 .hero__badge {

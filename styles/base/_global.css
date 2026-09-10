@@ -5,6 +5,10 @@
   stroke-width: 1px;
 }
 
+main {
+  background-color: var(--color-bg-canvas-layer);
+}
+
 .hero {
   display: flex;
   flex-direction: center;
@@ -26,6 +30,5 @@
 }
 
 .footer {
-  background-color: var(--color-bg--nav);
   padding: 1rem;
 }

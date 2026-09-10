@@ -1,26 +1,4 @@
-.nav__list {
-  display: flex;
-  gap: 2rem;
-}
-
-.nav__item {
-  font-size: var(--font-size-topnav);
-  font-weight: 600;
-  color: var(--color-primary--text);
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    color: var(--color-accent-primary--hover);
-  }
-
-  &:focus-visible {
-    outline: 2px solid var(--color-accent-primary);
-    outline-offset: 2px;
-  }
-}
-
 .site-header {
-  background-color: var(--color-bg--nav);
   font-size: var(--font-size-topnav);
 }
 
@@ -31,4 +9,23 @@
   gap: 4rem;
   padding: 1.2rem 2rem;
   flex-wrap: wrap;
+}
+
+.nav__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__item {
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: var(--color-accent-primary--hover);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent-primary);
+    outline-offset: 2px;
+  }
 }

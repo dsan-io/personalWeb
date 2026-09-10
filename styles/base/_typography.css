@@ -1,4 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  /* ---------- Tipografía: primitivos (--fs-*) ---------- */
+  --fs-12: 0.75rem; /* 12px — labels */
+  --fs-13: 0.8125rem; /* 13px — code / technology chips */
+  --fs-14: 0.875rem; /* 14px — body mobile */
+  --fs-16: 1rem; /* 16px — body desktop */
+  --fs-18: 1.125rem; /* 18px — headline-sm */
+  --fs-24: 1.5rem; /* 24px — headline-lg */
+  --fs-28: 1.75rem; /* 28px — headline-xl mobile */
+  --fs-36: 2.25rem; /* 36px — headline-xl / hero mobile */
+  --fs-56: 3.5rem; /* 56px — hero desktop */
+
+  /* ---------- Tipografía: semánticos (--font-size-*) ---------- */
+  --font-size-h1: var(--fs-36); /* display-hero-mobile */
+  --font-size-h2: var(--fs-28); /* headline-xl-mobile */
+  --font-size-h3: var(
+    --fs-24
+  ); /* headline-lg (tamaño fijo, sin variante mobile/desktop) */
+  --font-size-h4: var(--fs-18); /* headline-sm */
+  --font-size-p: var(--fs-14);
+  --font-size-label-caps: var(--fs-12); /* overlines, badges en mayúsculas */
+  --font-size-label-sm: var(--fs-12); /* etiquetas pequeñas */
+  --font-size-code: var(--fs-13); /* fragmentos de código inline */
+
+  @media (width >= calc(600 / 16 * 1rem)) {
+    --font-size-topnav: var(--fs-14);
+    --font-size-h1: var(--fs-56); /* display-hero */
+    --font-size-h2: var(--fs-36); /* headline-xl */
+    --font-size-p: var(
+      --fs-16
+    ); /* body-lg desktop / body-md mobile, según guía de accesibilidad */
+    /* h3 y h4 no cambian: headline-lg y headline-sm son tamaños fijos en el spec */
+  }
+}
 
 h1 {
   font-size: var(--font-size-h1);
@@ -16,6 +51,6 @@ h4 {
 
 p {
   font-size: var(--font-size-p);
-  color: var(--color-secondary--text);
+  color: var(--color-text-secondary);
   line-height: 1.8;
 }

@@ -1,16 +1,41 @@
 .btn {
   display: inline-block;
-  padding: 0.8rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
   text-decoration: none;
-  color: var(--btn-text);
-  background-color: var(--btn-bg);
   transition: 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  font-weight: 700;
 
   &:hover {
-    background-color: var(--btn-bg--hover);
-    color: var(--btn-text--hover);
+    background-color: var(--color-btn-bg--hover);
+    transform: translateY(-1px);
+    box-shadow: 0 0 12px rgba(6, 182, 212, 0.4);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent-primary);
+    outline-offset: 2px;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.btn-secondary {
+  background-color: var(--color-btn-secondary-bg);
+  color: var(--color-btn-secondary-text);
+  border: 2px solid var(--color-btn-secondary-border);
+  font-weight: 600;
+
+  &:hover {
+    border: 2px solid var(--color-btn-secondary-border--hover);
+    background: rgba(56, 189, 248, 0.1);
   }
 
   &:focus-visible {

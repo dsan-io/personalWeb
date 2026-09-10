@@ -46,15 +46,16 @@ html {
 /* Configuramos la tipografía para toda la web */
 body {
   min-height: 100vh;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-main-bg);
-  color: var(--color-primary--text);
+  background-color: var(--color-bg-canvas);
+  color: var(--color-text-primary);
   line-height: 1.5; /* Increase line-height */
   -webkit-font-smoothing: antialiased; /* Improve text rendering */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
+  font-size: var(--font-size-p); /* Set default font size */
 }
 
 /* Improve media defaults */

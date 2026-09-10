@@ -1,60 +1,64 @@
-:root {
-  --fs-14: calc(14 / 16 * 1rem);
-  --fs-16: calc(16 / 16 * 1rem);
-  --fs-24: calc(24 / 16 * 1rem);
-  --fs-36: calc(36 / 16 * 1rem);
-  --fs-42: calc(42 / 16 * 1rem);
-  --fs-48: calc(48 / 16 * 1rem);
-  --fs-72: calc(72 / 16 * 1rem);
-
-  --font-size-topnav: var(--fs-14);
-  --font-size-h1: var(--fs-42);
-  --font-size-h2: var(--fs-36);
-  --font-size-h3: var(--fs-24);
-  --font-size-h4: var(--fs-16);
-  --font-size-p: var(--fs-14);
-
-  @media (width >= calc(600 / 16 * 1rem)) {
-    --font-size-topnav: var(--fs-16);
-    --font-size-h1: var(--fs-72);
-    --font-size-h2: var(--fs-48);
-    --font-size-h3: var(--fs-36);
-  }
-}
-
 /* Colors */
 :root {
-  --c-slate-950: #0f172a;
+  /* Slate — superficies y texto neutro */
+  --c-slate-975: #0a0f1d; /* canvas base (nuevo, el fondo más profundo) */
+  --c-slate-950: #0f172a; /* surface layer */
   --c-slate-900: #16213b;
-  --c-slate-800: #1e293b;
-  --c-slate-700: #334155;
+  --c-slate-800: #1e293b; /* surface elevated / hover */
+  --c-slate-700: #334155; /* border definition */
+  --c-slate-500: #64748b; /* texto muted (nuevo) */
+  --c-slate-400: #94a3b8; /* texto secundario */
 
-  --c-slate-400: #94a3b8;
-  --c-slate-300: #cbd5e1;
+  /* Text / neutral */
+  --c-slate-300: #f8fafc;
 
-  --c-white: #ffffff;
-
+  /* Sky — acento primario */
   --c-sky-300: #87ceeb;
   --c-sky-400: #38bdf8;
   --c-sky-600: #0284c7;
   --c-sky-700: #0369a1;
 
-  --color-main-bg: var(--c-slate-950);
+  /* Cyan — acento secundario (nuevo) */
+  --c-cyan-500: #06b6d4;
 
-  --color-bg--nav: var(--c-slate-900);
-  --color-bg--card: var(--c-slate-800);
-  --color-bg--tag: var(--c-slate-700);
+  /* Emerald — estado / disponibilidad (nuevo) */
+  --c-emerald-500: #10b981;
 
-  --color-primary--text: var(--c-white);
-  --color-secondary--text: var(--c-slate-400);
-  --color-muted--text: var(--c-slate-300);
+  /* Rojo — estados de error (nuevo, para validación de formulario) */
+  --c-red-300: #ffb4ab;
+  --c-red-900: #93000a;
 
-  --btn-bg: var(--c-sky-300);
-  --btn-text: var(--c-slate-950);
+  /* ---------- Canvas ---------- */
 
-  --btn-bg--hover: var(--c-sky-400);
-  --btn-text--hover: var(--c-slate-950);
+  --color-bg-canvas: var(--c-slate-975);
+  --color-bg-canvas-layer: var(--c-slate-950);
+  --color-bg-canvas-lowest: var(--c-slate-900);
+
+  --color-bg-surface-low: var(--c-slate-800); /*bg card*/
+  --color-bg-surface: var(--c-slate-700); /*tag, border*/
+
+  /* ---------- Buttons ---------- */
+
+  --color-btn-bg: var(--c-sky-400);
+  --color-btn-text: var(--c-slate-975);
+  --color-btn-bg--hover: var(--c-cyan-500);
+
+  --color-btn-secondary-bg: transparent;
+  --color-btn-secondary-text: var(--c-slate-300);
+  --color-btn-secondary-border: var(--c-slate-700);
+  --color-btn-secondary-border--hover: var(--c-sky-400);
+
+  /* ---------- Text ---------- */
+
+  --color-text-primary: var(--c-slate-300);
+  --color-text-secondary: var(--c-slate-400);
+  --color-text-muted: var(--c-slate-500);
 
   --color-accent-primary: var(--c-sky-600);
   --color-accent-primary--hover: var(--c-sky-700);
+  --color-accent-secondary: var(--c-cyan-500);
+
+  --color-status-success: var(--c-emerald-500);
+  --color-status-error: var(--c-red-300);
+  --color-status-error--bg: var(--c-red-900);
 }
