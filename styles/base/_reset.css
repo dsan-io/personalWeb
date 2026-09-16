@@ -26,11 +26,6 @@
   box-sizing: border-box;
 }
 
-/* Remove default margin
-*:not(dialog) {
-  margin: 0;
-} */
-
 /* Configuramos anclas suaves */
 html {
   scroll-behavior: smooth;
@@ -142,7 +137,6 @@ label {
 svg {
   width: 100%;
   display: block;
-  fill: currentColor;
 }
 
 /* Create a root stacking context */

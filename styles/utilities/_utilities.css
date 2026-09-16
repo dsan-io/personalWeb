@@ -1,55 +1,62 @@
-/* * {
-    outline: 1px solid red !important;
-  } */
-
-.blob {
-  position: relative;
-  display: grid;
-  place-items: center;
+* {
+  outline: 1px solid red !important;
 }
 
-.blob::before {
+.btn__hidden-mobile {
+  display: none;
+}
+
+.background-content--low {
+  background-color: var(--color-bg-canvas-lowest);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.subtitle::before {
   content: "";
-  position: absolute;
-  inset: -1.5rem;
-  background: radial-gradient(
-    circle at 30% 30%,
-    var(--c-sky-600) 0%,
-    transparent 70%
-  );
-  filter: blur(40px);
-  opacity: 0.35;
-  z-index: -1;
+  display: inline-block;
+  width: 0.5rem;
+  height: 1.4rem;
+  margin-right: 0.5rem;
+  background-color: var(--c-sky-300);
+  border-radius: 9999px;
+  vertical-align: middle;
 }
 
-.hero__eyebrow {
-  color: var(--color-accent-secondary);
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  font-size: var(--fs-14);
+.icon-accent__sky-300 {
+  color: var(--c-sky-300);
 }
 
-.text-accent {
+.icon-accent__sky-400 {
   color: var(--color-accent-primary);
 }
 
-.hero__badge {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  background-color: var(--color-bg--card);
-  color: var(--color-primary--text);
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-  font-size: var(--fs-14);
-  font-weight: 600;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+.icon-accent__emerald-500 {
+  color: var(--color-status-success);
 }
 
-.social-networks__item {
-  width: 100%;
-  background-color: var(--color-bg--card);
-  border-radius: 0.5rem;
-  padding: 1rem 2rem;
+.hero__image-wrapper {
+  position: relative;
+}
+
+.hero__image-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background: radial-gradient(circle, rgb(56 189 248 / 8%), transparent 70%);
+  filter: blur(120px);
+  z-index: -1;
+}
+
+@media (width >= 64rem) {
+  .btn__hidden-mobile {
+    display: inherit;
+  }
 }

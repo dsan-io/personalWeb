@@ -1,15 +1,20 @@
 .btn {
-  display: inline-block;
-  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
   transition: 0.3s ease-in-out;
+  font-weight: 700;
+  font-size: var(--fs-13);
+  letter-spacing: 1px;
 }
 
 .btn-primary {
   background-color: var(--color-btn-bg);
   color: var(--color-btn-text);
-  font-weight: 700;
 
   &:hover {
     background-color: var(--color-btn-bg--hover);
@@ -30,12 +35,10 @@
 .btn-secondary {
   background-color: var(--color-btn-secondary-bg);
   color: var(--color-btn-secondary-text);
-  border: 2px solid var(--color-btn-secondary-border);
   font-weight: 600;
 
   &:hover {
-    border: 2px solid var(--color-btn-secondary-border--hover);
-    background: rgba(56, 189, 248, 0.1);
+    background-color: var(--color-btn-secondary-border--hover);
   }
 
   &:focus-visible {
@@ -46,4 +49,66 @@
   &:active {
     transform: scale(0.98);
   }
+}
+
+.btn-icon {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2px;
+}
+
+/* Contact interactive button */
+
+.btn-accent__sky-300:hover {
+  color: var(--c-sky-300);
+  background-color: var(--color-bg-surface);
+}
+
+.btn-accent__sky-300 .item-content {
+  color: inherit;
+}
+
+.btn-accent__sky-400:hover {
+  color: var(--color-accent-primary);
+  background-color: var(--color-bg-surface);
+}
+
+.btn-accent__sky-400 .item-content {
+  color: inherit;
+}
+
+.interactive:hover .item-icon {
+  transform: scale(1.1);
+}
+
+.interactive:hover .interactive-arrow {
+  transform: translateX(5px);
+}
+
+.item-btn {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-canvas);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.item-btn .icon-copy {
+  color: inherit;
+  width: 20px;
+  height: 20px;
+  stroke-width: 2px;
+}
+
+.email__label:hover {
+  color: var(--color-status-success);
+}
+
+.item-btn:hover {
+  color: var(--color-primary--text);
 }

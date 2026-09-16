@@ -1,23 +1,102 @@
-.wrapper {
-  max-width: min(calc(100% - 48px), calc(1200 / 16 * 1rem));
-  margin-inline: auto;
-}
-
-.grid-layout-responsive {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.container--spacing {
-  margin-block: 4rem;
+:root {
+  --gutter: 1rem;
 }
 
 @media (width >= 40rem) {
-  /* ~640px, ajusta al breakpoint que uses */
-  .hero .grid-layout-responsive {
-    grid-template-columns: 1.2fr 1fr;
+  :root {
+    --gutter: 1.5rem;
+  }
+}
+
+@media (width >= 64rem) {
+  :root {
+    --gutter: 2rem;
+  }
+}
+
+.wrapper {
+  max-width: min(calc(100% - var(--gutter) * 2), 72rem);
+  margin-inline: auto;
+}
+
+section + section {
+  margin-top: 6rem;
+}
+
+main > section:first-child {
+  margin-top: 6rem; /* o el valor que uses respecto al header */
+}
+
+main > section:last-child {
+  margin-bottom: 6rem; /* o el valor respecto al footer */
+}
+
+.hero__grid,
+.content__grid,
+card,
+.social-networks__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.hero__grid {
+  overflow: hidden;
+}
+
+.hero__copy,
+.hero__visual,
+.about__content,
+.about__skills,
+.card,
+.social-networks__content,
+.social-networks__form {
+  grid-column: 1 / -1; /* Mobile y Tablet: columna completa por defecto */
+}
+
+@media (width >= 40rem) {
+  .hero__grid,
+  .content__grid,
+  .card,
+  .social-networks__grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media (width >= 64rem) {
+  .hero__grid,
+  .content__grid,
+  .social-networks__grid {
+    grid-template-columns: repeat(12, 1fr);
     align-items: center;
     gap: 3rem;
+  }
+
+  .hero__copy {
+    grid-column: span 7; /* sobreescribe el 1/-1 solo aquí */
+  }
+
+  .hero__visual {
+    grid-column: span 5;
+  }
+
+  .about__content {
+    grid-column: span 6;
+  }
+
+  .about__skills {
+    grid-column: span 6;
+  }
+
+  .card {
+    grid-column: span 4;
+  }
+
+  .social-networks__content {
+    grid-column: span 6;
+  }
+
+  .social-networks__form {
+    grid-column: span 6;
   }
 }

@@ -20,7 +20,122 @@
   <body>
     <header class="site-header">
       <div class="site-header__nav wrapper">
-        <a href="index.html" class="site-header__logo">Leonardo Sandoval</a>
+        <a href="index.html" class="site-header__logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 80"
+            width="100%"
+            height="100%"
+            fill="none"
+            role="img"
+            aria-label="Leonardo Sandoval - Dev Portfolio"
+          >
+            <!-- Símbolo / Isotipo -->
+            <g class="logo-mark">
+              <rect
+                x="6"
+                y="10"
+                width="60"
+                height="60"
+                rx="16"
+                fill="#0f172a"
+                stroke="#1e293b"
+                stroke-width="1.5"
+              />
+              <rect
+                x="6"
+                y="10"
+                width="60"
+                height="60"
+                rx="16"
+                fill="url(#brand-glow)"
+                opacity="0.15"
+              />
+              <rect
+                x="6"
+                y="10"
+                width="60"
+                height="60"
+                rx="16"
+                stroke="url(#accent-border)"
+                stroke-width="1.5"
+              />
+
+              <!-- Chevrons y slash </> -->
+              <path
+                d="M25 50L17 40L25 30"
+                stroke="#38bdf8"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M33 26L39 54"
+                stroke="#06b6d4"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M47 30L55 40L47 50"
+                stroke="#38bdf8"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+
+            <!-- Tipografía -->
+            <text
+              x="82"
+              y="44"
+              font-family="'Plus Jakarta Sans', system-ui, sans-serif"
+              font-size="25"
+              font-weight="800"
+              fill="#f8fafc"
+              letter-spacing="-0.6"
+            >
+              Leonardo
+              <tspan fill="#38bdf8">.</tspan>
+            </text>
+            <text
+              x="83"
+              y="61"
+              font-family="'Plus Jakarta Sans', system-ui, sans-serif"
+              font-size="11"
+              font-weight="700"
+              fill="#94a3b8"
+              letter-spacing="2"
+            >
+              DEV PORTFOLIO
+            </text>
+
+            <!-- Gradientes -->
+            <defs>
+              <linearGradient
+                id="brand-glow"
+                x1="6"
+                y1="10"
+                x2="66"
+                y2="70"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#38bdf8" />
+                <stop offset="1" stop-color="#06b6d4" stop-opacity="0" />
+              </linearGradient>
+              <linearGradient
+                id="accent-border"
+                x1="6"
+                y1="10"
+                x2="66"
+                y2="70"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#38bdf8" />
+                <stop offset="1" stop-color="#1e293b" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </a>
         <nav aria-label="Navegación principal">
           <ul class="nav__list">
             <li><a href="#sobreMi" class="nav__item">Sobre mí</a></li>
@@ -31,14 +146,16 @@
       </div>
     </header>
     <main>
-      <section class="hero wrapper container--spacing">
-        <div class="grid-layout-responsive">
-          <div>
+      <section class="wrapper" id="Hero">
+        <div class="hero__grid">
+          <div class="hero__copy">
             <p class="hero__eyebrow">👋 Hola, soy</p>
-            <h1>Leonardo Sandoval</h1>
-            <p class="" hero__role>
-              Desarrollador en formación en
-              <span class="text-accent"
+            <h1 class="hero__title">
+              Leonardo <span class="title-accent">Sandoval</span>
+            </h1>
+            <p class="hero__role">
+              <span class="text-accent">Desarrollador en formación en</span>
+              <span class="text-accent__underline"
                 >Ingeniería en Sistemas Computacionales</span
               >
             </p>
@@ -48,52 +165,57 @@
               Android, iOS y tecnologías web como HTML, CSS y JavaScript.
             </p>
             <div class="hero__buttons">
-              <a href="#proyectos" class="btn btn-primary">VER PROYECTOS</a>
-              <a href="#sobreMi" class="btn btn-secondary">SOBRE MÍ</a>
-              <a href="#contacto" class="btn">CONTACTAR</a>
+              <a href="#proyectos" class="btn btn-primary"
+                >VER PROYECTOS <i data-lucide="arrow-down" class="btn-icon"></i
+              ></a>
+              <a href="#sobreMi" class="btn btn-secondary btn__hidden-mobile"
+                >SOBRE MÍ<i data-lucide="user-round" class="btn-icon"></i>
+              </a>
+              <a href="#contacto" class="btn btn-accent__sky-400"
+                >CONTACTAR<i data-lucide="mail" class="btn-icon"></i>
+              </a>
             </div>
           </div>
-          <div class="blob">
+          <div class="hero__image-wrapper hero__visual">
             <img
               src="./assets/images/image_profile.webp"
               alt="Fotografía de Leonardo Sandoval"
-              width="1200"
-              height="675"
+              width="1254"
+              height="1254"
               class="image-profile"
             />
             <span class="hero__badge">💻 Disponible para proyectos</span>
           </div>
         </div>
       </section>
-      <section
-        class="wrapper container--spacing grid-layout-responsive"
-        id="sobreMi"
-      >
+      <section class="wrapper content__grid" id="sobreMi">
         <div class="about__content">
-          <h2 aria-label="Sobre mí">Sobre mí</h2>
-          <p>
-            Soy estudiante de
-            <strong>Ingeniería en Sistemas Computacionales</strong> en la UVEG,
-            actualmente enfocado en completar mi formación y dar el siguiente
-            paso hacia el ámbito profesional.
-          </p>
-          <p>
-            Durante mi formación académica he trabajado con diferentes
-            tecnologías y áreas de desarrollo, principalmente en aplicaciones
-            móviles para Android e iOS. Actualmente estoy enfocando parte de mi
-            aprendizaje en desarrollo web, fortaleciendo mis fundamentos de
-            HTML, CSS y JavaScript.
-          </p>
-          <p>
-            Me interesa seguir desarrollándome como programador, resolver
-            problemas mediante soluciones prácticas y continuar adquiriendo
-            experiencia a través de proyectos que me permitan aplicar y ampliar
-            mis conocimientos.
-          </p>
+          <h2 aria-label="Sobre mí" class="subtitle">Sobre mí</h2>
+          <div class="background-content--low">
+            <p>
+              Soy estudiante de
+              <strong>Ingeniería en Sistemas Computacionales</strong> en la
+              UVEG, actualmente enfocado en completar mi formación y dar el
+              siguiente paso hacia el ámbito profesional.
+            </p>
+            <p>
+              Durante mi formación académica he trabajado con diferentes
+              tecnologías y áreas de desarrollo, principalmente en aplicaciones
+              móviles para Android e iOS. Actualmente estoy enfocando parte de
+              mi aprendizaje en desarrollo web, fortaleciendo mis fundamentos de
+              HTML, CSS y JavaScript.
+            </p>
+            <p>
+              Me interesa seguir desarrollándome como programador, resolver
+              problemas mediante soluciones prácticas y continuar adquiriendo
+              experiencia a través de proyectos que me permitan aplicar y
+              ampliar mis conocimientos.
+            </p>
+          </div>
         </div>
-        <div class="about__skills">
-          <h3>Tecnologías</h3>
-          <h4>Lenguajes</h4>
+        <div class="about__skills" id="tecnologias">
+          <h2 aria-label="Tecnologías" class="subtitle">Tecnologías & Stack</h2>
+          <h3>Lenguajes</h3>
           <ul class="skills__list">
             <li class="skills__item">Java</li>
             <li class="skills__item">Kotlin</li>
@@ -101,22 +223,22 @@
             <li class="skills__item">Swift</li>
             <li class="skills__item">JavaScript</li>
           </ul>
-          <h4>Desarrollo</h4>
+          <h3>Desarrollo</h3>
           <ul class="skills__list">
             <li class="skills__item">Android Studio</li>
             <li class="skills__item">iOS</li>
             <li class="skills__item">HTML & CSS</li>
           </ul>
-          <h4>Herramientas</h4>
+          <h3>Herramientas</h3>
           <ul class="skills__list">
             <li class="skills__item">Git</li>
             <li class="skills__item">GitHub</li>
           </ul>
         </div>
       </section>
-      <section class="wrapper container--spacing" id="proyectos">
+      <section class="wrapper" id="proyectos">
         <h2 aria-label="Proyectos">Proyectos</h2>
-        <div class="grid-layout-responsive">
+        <div class="hero__grid">
           <article class="card">
             <img
               src="./assets/images/vaccineOrginalKata.webp"
@@ -162,49 +284,77 @@
           <div class="card"></div>
         </div>
       </section>
-      <section
-        class="wrapper grid-layout-responsive container--spacing"
-        id="contacto"
-      >
-        <div class="social-networks">
-          <h3 aria-label="Contacto">Contacto</h3>
-          <p>
-            Si tienes un proyecto en desarrollo, una propuesta profesional de
-            empleo o simplemente quieres intercambiar ideas, no dudes en
-            contactarme. Estoy abierto a nuevas oportunidades y colaboraciones.
-          </p>
-          <h4>Redes de Contacto:</h4>
-          <div class="social-networks__list">
-            <div class="social-networks__item">
-              <i data-lucide="code-xml"></i>
-              GitHub<a
+      <section class="wrapper" id="contacto">
+        <div class="social-networks__grid background-content--low">
+          <div class="social-networks__content">
+            <h2 aria-label="Contacto" class="subtitle">Contacto</h2>
+            <p>
+              Si tienes un proyecto en desarrollo, una propuesta profesional de
+              empleo o simplemente quieres intercambiar ideas, no dudes en
+              contactarme. Estoy abierto a nuevas oportunidades y
+              colaboraciones.
+            </p>
+            <h3>Redes de Contacto:</h3>
+            <div class="social-networks__list">
+              <a
+                class="social-networks__item interactive btn-accent__sky-300"
                 href="https://github.com/dsan-io"
                 target="_blank"
                 rel="noopener noreferrer"
-                >dsan-io</a
+                class="item-content__link"
               >
-            </div>
-            <div>
-              LinkedIn
+                <div class="item-icon">
+                  <i data-lucide="square-code" class="icon-accent__sky-300"></i>
+                </div>
+                <div class="item-content">
+                  <span class="item-content__label">GitHub</span>
+                  dsan-io
+                </div>
+                <div>
+                  <i data-lucide="arrow-right" class="interactive-arrow"></i>
+                </div>
+              </a>
               <a
+                class="social-networks__item interactive btn-accent__sky-400"
                 href="https://linkedin.com/in/leonardosandoval"
                 target="_blank"
                 rel="noopener noreferrer"
-                >in/leonardosandoval</a
+                class="item-content__link"
               >
-            </div>
-            <div>
-              Email<a href="mailto:l.sandoval.dev@gmail.com"
-                >l.sandoval.dev@gmail.com</a
-              >
+                <div class="item-icon">
+                  <i
+                    data-lucide="briefcase-business"
+                    class="icon-accent__sky-400"
+                  ></i>
+                </div>
+                <div class="item-content">
+                  <span class="item-content__label">LinkedIn</span>
+                  dsan-io
+                </div>
+                <div>
+                  <i data-lucide="arrow-right" class="interactive-arrow"></i>
+                </div>
+              </a>
+
+              <div class="social-networks__item">
+                <div class="item-icon">
+                  <i data-lucide="mail" class="icon-accent__emerald-500"></i>
+                </div>
+                <div class="item-content">
+                  <span class="item-content__label">Email</span>
+                  <a href="mailto:l.sandoval.dev@gmail.com" class="email__label"
+                    >l.sandoval.dev@gmail.com</a
+                  >
+                </div>
+                <button class="item-btn">
+                  <i data-lucide="clipboard" class="icon-copy"></i>Copiar
+                </button>
+              </div>
             </div>
           </div>
-          <!-- Definir que acción y a donde redirigir el botón de enviar mensaje -->
-          <a class="btn" href="mailto:l.sandoval.dev@gmail.com"
-            >Enviar mensaje</a
-          >
+
+          <div cldiv="social-networks__fomr"></div>
         </div>
-        <div></div>
       </section>
     </main>
     <footer class="footer">
