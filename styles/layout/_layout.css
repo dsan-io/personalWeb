@@ -33,10 +33,15 @@ main > section:last-child {
 
 .hero__grid,
 .content__grid,
-card,
 .social-networks__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.card__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
 }
 
@@ -48,7 +53,6 @@ card,
 .hero__visual,
 .about__content,
 .about__skills,
-.card,
 .social-networks__content,
 .social-networks__form {
   grid-column: 1 / -1; /* Mobile y Tablet: columna completa por defecto */
@@ -57,7 +61,6 @@ card,
 @media (width >= 40rem) {
   .hero__grid,
   .content__grid,
-  .card,
   .social-networks__grid {
     grid-template-columns: repeat(8, 1fr);
   }
@@ -66,10 +69,15 @@ card,
 @media (width >= 64rem) {
   .hero__grid,
   .content__grid,
+  .card__grid,
   .social-networks__grid {
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
     gap: 3rem;
+  }
+
+  .card__grid {
+    align-items: initial; /* para que las cards no se estiren verticalmente */
   }
 
   .hero__copy {

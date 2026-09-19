@@ -138,7 +138,7 @@
         </a>
         <nav aria-label="Navegación principal">
           <ul class="nav__list">
-            <li><a href="#sobreMi" class="nav__item">Sobre mí</a></li>
+            <li><a href="#sobre-mi" class="nav__item">Sobre mí</a></li>
             <li><a href="#proyectos" class="nav__item">Proyectos</a></li>
             <li><a href="#contacto" class="nav__item">Contacto</a></li>
           </ul>
@@ -146,7 +146,7 @@
       </div>
     </header>
     <main>
-      <section class="wrapper" id="Hero">
+      <section class="wrapper" id="hero">
         <div class="hero__grid">
           <div class="hero__copy">
             <p class="hero__eyebrow">👋 Hola, soy</p>
@@ -155,7 +155,7 @@
             </h1>
             <p class="hero__role">
               <span class="text-accent">Desarrollador en formación en</span>
-              <span class="text-accent__underline"
+              <span class="text-accent--underline"
                 >Ingeniería en Sistemas Computacionales</span
               >
             </p>
@@ -166,13 +166,26 @@
             </p>
             <div class="hero__buttons">
               <a href="#proyectos" class="btn btn-primary"
-                >VER PROYECTOS <i data-lucide="arrow-down" class="btn-icon"></i
+                >ver proyectos
+                <i
+                  data-lucide="arrow-down"
+                  class="btn-icon"
+                  aria-hidden="true"
+                ></i
               ></a>
-              <a href="#sobreMi" class="btn btn-secondary btn__hidden-mobile"
-                >SOBRE MÍ<i data-lucide="user-round" class="btn-icon"></i>
+              <a href="#sobre-mi" class="btn btn-secondary btn--hidden-mobile"
+                >sobre mí<i
+                  data-lucide="user-round"
+                  class="btn-icon"
+                  aria-hidden="true"
+                ></i>
               </a>
-              <a href="#contacto" class="btn btn-accent__sky-400"
-                >CONTACTAR<i data-lucide="mail" class="btn-icon"></i>
+              <a
+                href="#contacto"
+                class="btn btn-accent--primary"
+                aria-hidden="true"
+              >
+                contactar<i data-lucide="mail" class="btn-icon"></i>
               </a>
             </div>
           </div>
@@ -182,15 +195,15 @@
               alt="Fotografía de Leonardo Sandoval"
               width="1254"
               height="1254"
-              class="image-profile"
+              class="hero__image"
             />
             <span class="hero__badge">💻 Disponible para proyectos</span>
           </div>
         </div>
       </section>
-      <section class="wrapper content__grid" id="sobreMi">
+      <section class="wrapper content__grid" id="about-me">
         <div class="about__content">
-          <h2 aria-label="Sobre mí" class="subtitle">Sobre mí</h2>
+          <h2 class="subtitle">Sobre mí</h2>
           <div class="background-content--low">
             <p>
               Soy estudiante de
@@ -214,7 +227,7 @@
           </div>
         </div>
         <div class="about__skills" id="tecnologias">
-          <h2 aria-label="Tecnologías" class="subtitle">Tecnologías & Stack</h2>
+          <h2 class="subtitle">Tecnologías & Stack</h2>
           <h3>Lenguajes</h3>
           <ul class="skills__list">
             <li class="skills__item">Java</li>
@@ -237,57 +250,152 @@
         </div>
       </section>
       <section class="wrapper" id="proyectos">
-        <h2 aria-label="Proyectos">Proyectos</h2>
-        <div class="hero__grid">
+        <h2>Proyectos</h2>
+        <div class="card__grid">
           <article class="card">
             <img
               src="./assets/images/vaccineOrginalKata.webp"
               alt="Imagen ilustrativa del proyecto Vaccine Landing Page"
-              width="400"
-              height="300"
+              width="3200"
+              height="2400"
               loading="lazy"
-              class="card__image"
+              class="card--image"
             />
-            <div>
+            <div class="card--content">
               <h3>Vaccination Landing Page</h3>
               <p>
                 Página desarrollada como práctica de maquetación y diseño
                 responsive, enfocada en estructura semántica, layout y
                 adaptación a diferentes tamaños de pantalla.
               </p>
-              <div>
-                <h4>Tecnologías</h4>
-                <ul class="skills__list">
-                  <li class="skills__item">HTML</li>
-                  <li class="skills__item">CSS</li>
-                </ul>
-              </div>
-              <div class="card__buttons">
-                <a
-                  href="https://dsan-io.github.io/vaccine_kataCSS/"
-                  class="btn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Ver proyecto</a
-                >
-                <a
-                  href="https://github.com/dsan-io/vaccine_kataCSS"
-                  class="btn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub</a
-                >
-              </div>
+            </div>
+            <div class="card--skills">
+              <ul class="skills__list">
+                <li class="skills__item">HTML</li>
+                <li class="skills__item">CSS</li>
+              </ul>
+            </div>
+            <div class="card--buttons">
+              <a
+                href="https://dsan-io.github.io/vaccine_kataCSS/"
+                class="btn btn-primary btn-primary-card"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver proyecto
+                <i
+                  data-lucide="square-arrow-out-up-right"
+                  class="btn-icon"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <a
+                href="https://github.com/dsan-io/vaccine_kataCSS"
+                class="btn btn-secondary-card btn-accent--secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i
+                  data-lucide="square-code"
+                  class="btn-icon card-icon"
+                  aria-hidden="true"
+                ></i>
+              </a>
             </div>
           </article>
-          <div class="card"></div>
-          <div class="card"></div>
+          <article class="card">
+            <img
+              src="./assets/images/task-android.png"
+              alt="Imagen ilustrativa del proyecto una aplicación móvil para Android"
+              width="704"
+              height="440"
+              loading="lazy"
+              class="card--image"
+            />
+            <div class="card--content">
+              <h3>TaskFlow Android App</h3>
+              <p>
+                Aplicación nativa para la organización de actividades y rutinas
+                diarias. Integra persistencia local con Room DB, arquitectura
+                MVVM y notificaciones push programadas.
+              </p>
+            </div>
+            <div class="card--skills">
+              <ul class="skills__list">
+                <li class="skills__item">Kotlin</li>
+                <li class="skills__item">Jetpack Compose</li>
+                <li class="skills__item">SQLite</li>
+              </ul>
+            </div>
+            <div class="card--buttons">
+              <a
+                href="#"
+                class="btn btn-primary-card btn-secondary--inactive btn-accent--secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Demo APK</a
+              >
+              <a
+                href="#"
+                class="btn btn-secondary-card btn-accent--secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i
+                  data-lucide="square-code"
+                  class="btn-icon card-icon"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="./assets/images/ios-proyect.png"
+              alt="Imagen ilustrativa del proyecto realizado para ecosistemas en iOS"
+              width="704"
+              height="440"
+              loading="lazy"
+              class="card--image"
+            />
+            <div class="card--content">
+              <h3>iOS Budget & Finance Tracker</h3>
+              <p>
+                Control de finanzas personales, categorización de presupuestos y
+                métricas interactivas creado bajo las directrices Human
+                Interface Guidelines de Apple.
+              </p>
+            </div>
+            <div class="card--skills">
+              <ul class="skills__list">
+                <li class="skills__item">Swift</li>
+                <li class="skills__item">SwiftUI</li>
+              </ul>
+            </div>
+            <div class="card--buttons">
+              <a
+                href="#"
+                class="btn btn-primary-card btn-secondary--inactive btn-accent--primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Detalles</a
+              >
+              <a
+                href="#"
+                class="btn btn-secondary-card btn-accent--secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i
+                  data-lucide="square-code"
+                  class="btn-icon card-icon"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </div>
+          </article>
         </div>
       </section>
       <section class="wrapper" id="contacto">
         <div class="social-networks__grid background-content--low">
           <div class="social-networks__content">
-            <h2 aria-label="Contacto" class="subtitle">Contacto</h2>
+            <h2 class="subtitle">Contacto</h2>
             <p>
               Si tienes un proyecto en desarrollo, una propuesta profesional de
               empleo o simplemente quieres intercambiar ideas, no dudes en
@@ -297,48 +405,57 @@
             <h3>Redes de Contacto:</h3>
             <div class="social-networks__list">
               <a
-                class="social-networks__item interactive btn-accent__sky-300"
+                class="social-networks__item interactive btn-accent--secondary item-content__link"
                 href="https://github.com/dsan-io"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="item-content__link"
               >
                 <div class="item-icon">
-                  <i data-lucide="square-code" class="icon-accent__sky-300"></i>
+                  <i
+                    data-lucide="square-code"
+                    class="icon-accent--secondary"
+                  ></i>
                 </div>
                 <div class="item-content">
                   <span class="item-content__label">GitHub</span>
                   dsan-io
                 </div>
                 <div>
-                  <i data-lucide="arrow-right" class="interactive-arrow"></i>
+                  <i
+                    data-lucide="arrow-right"
+                    class="interactive-arrow"
+                    aria-hidden="true"
+                  ></i>
                 </div>
               </a>
               <a
-                class="social-networks__item interactive btn-accent__sky-400"
+                class="social-networks__item interactive btn-accent--primary item-content__link"
                 href="https://linkedin.com/in/leonardosandoval"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="item-content__link"
               >
                 <div class="item-icon">
                   <i
                     data-lucide="briefcase-business"
-                    class="icon-accent__sky-400"
+                    class="icon-accent--primary"
                   ></i>
                 </div>
                 <div class="item-content">
                   <span class="item-content__label">LinkedIn</span>
-                  dsan-io
+                  in/leonardosandoval
                 </div>
                 <div>
-                  <i data-lucide="arrow-right" class="interactive-arrow"></i>
+                  <i
+                    data-lucide="arrow-right"
+                    class="interactive-arrow"
+                    aria-hidden="true"
+                  ></i>
                 </div>
               </a>
 
               <div class="social-networks__item">
                 <div class="item-icon">
-                  <i data-lucide="mail" class="icon-accent__emerald-500"></i>
+                  <i data-lucide="mail" class="icon-accent--success"></i>
                 </div>
                 <div class="item-content">
                   <span class="item-content__label">Email</span>
@@ -347,22 +464,27 @@
                   >
                 </div>
                 <button class="item-btn">
-                  <i data-lucide="clipboard" class="icon-copy"></i>Copiar
+                  <i
+                    data-lucide="clipboard"
+                    class="icon-copy"
+                    aria-hidden="true"
+                  ></i
+                  >Copiar
                 </button>
               </div>
             </div>
           </div>
 
-          <div cldiv="social-networks__fomr"></div>
+          <div class="social-networks__form"></div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <p>&copy; 2026 Leonardo Sandoval. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://unpkg.com/lucide@1.47.0"></script>
+    <script defer>
+      lucide.createIcons();
+    </script>
   </body>
-  <script src="https://unpkg.com/lucide@1.43.0"></script>
-  <script>
-    lucide.createIcons();
-  </script>
 </html>

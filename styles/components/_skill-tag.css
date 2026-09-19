@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  padding: 0;
 }
 
 .skills__item {
@@ -9,4 +10,5 @@
   border-radius: 0.5rem;
   background-color: var(--color-bg-surface);
   color: var(--color-text-secondary);
+  font-weight: 600;
 }

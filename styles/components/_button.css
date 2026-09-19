@@ -4,7 +4,7 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   text-decoration: none;
   transition: 0.3s ease-in-out;
   font-weight: 700;
@@ -32,6 +32,10 @@
   }
 }
 
+.btn-primary-card {
+  flex: 2;
+}
+
 .btn-secondary {
   background-color: var(--color-btn-secondary-bg);
   color: var(--color-btn-secondary-text);
@@ -51,29 +55,56 @@
   }
 }
 
+.btn-secondary--inactive {
+  background-color: var(--color-bg-surface);
+  color: var(--color-btn-secondary-text);
+  font-weight: 600;
+}
+
+.btn-secondary-card {
+  padding: 1rem 0.5rem;
+  background-color: var(--color-btn-secondary-border--hover);
+  color: var(--color-btn-secondary-text);
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent-primary);
+    outline-offset: 2px;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
 .btn-icon {
   width: 16px;
   height: 16px;
   stroke-width: 2px;
 }
 
+.card-icon {
+  flex: 1;
+  height: 20px;
+  stroke-width: 2px;
+}
+
 /* Contact interactive button */
 
-.btn-accent__sky-300:hover {
-  color: var(--c-sky-300);
+.btn-accent--secondary:hover {
+  color: var(--color-accent-text);
   background-color: var(--color-bg-surface);
 }
 
-.btn-accent__sky-300 .item-content {
+.btn-accent--secondary .item-content {
   color: inherit;
 }
 
-.btn-accent__sky-400:hover {
+.btn-accent--primary:hover {
   color: var(--color-accent-primary);
   background-color: var(--color-bg-surface);
 }
 
-.btn-accent__sky-400 .item-content {
+.btn-accent--primary .item-content {
   color: inherit;
 }
 
@@ -96,6 +127,11 @@
   border-radius: 0.5rem;
   cursor: pointer;
   transition: color 0.3s ease;
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent-primary);
+    outline-offset: 2px;
+  }
 }
 
 .item-btn .icon-copy {
@@ -110,5 +146,5 @@
 }
 
 .item-btn:hover {
-  color: var(--color-primary--text);
+  color: var(--color-text-primary);
 }

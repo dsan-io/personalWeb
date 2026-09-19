@@ -1,8 +1,8 @@
-* {
+/* * {
   outline: 1px solid red !important;
-}
+} */
 
-.btn__hidden-mobile {
+.btn--hidden-mobile {
   display: none;
 }
 
@@ -30,15 +30,15 @@
   vertical-align: middle;
 }
 
-.icon-accent__sky-300 {
-  color: var(--c-sky-300);
+.icon-accent--secondary {
+  color: var(--color-accent-text);
 }
 
-.icon-accent__sky-400 {
+.icon-accent--primary {
   color: var(--color-accent-primary);
 }
 
-.icon-accent__emerald-500 {
+.icon-accent--success {
   color: var(--color-status-success);
 }
 
@@ -56,7 +56,7 @@
 }
 
 @media (width >= 64rem) {
-  .btn__hidden-mobile {
+  .btn--hidden-mobile {
     display: inherit;
   }
 }

@@ -20,6 +20,7 @@
   ); /* headline-lg (tamaño fijo, sin variante mobile/desktop) */
   --font-size-h4: var(--fs-18); /* headline-sm */
   --font-size-p: var(--fs-14);
+  --font-size-topnav: var(--fs-16);
   --font-size-label-caps: var(--fs-12); /* overlines, badges en mayúsculas */
   --font-size-label-sm: var(--fs-12); /* etiquetas pequeñas */
   --font-size-code: var(--fs-13); /* fragmentos de código inline */

@@ -110,14 +110,14 @@ importers:
   .:
     dependencies:
       lucide:
-        specifier: ^1.42.0
-        version: 1.42.0
+        specifier: 1.47.0
+        version: 1.47.0
 
 packages:
 
-  lucide@1.42.0:
-    resolution: {integrity: sha512-KLZ517pIUzuXGSFLlDL+5s6pcp4FI7brn4AXrFmRP7ghtxVVJ7/o4d3VejZeLPU127D/jITLs5WTLnH9Dc7VxA==}
+  lucide@1.47.0:
+    resolution: {integrity: sha512-gJoVJM5fvpBDGZTvhpJS9IEurz85HbD+wgOlCkXCIw35tHrqTxSdIYUN9sXvs7Aw3NCl67A+nlotNyoU4u7zOQ==}
 
 snapshots:
 
-  lucide@1.42.0: {}
+  lucide@1.47.0: {}
