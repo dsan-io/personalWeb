@@ -64,6 +64,10 @@ main > section:last-child {
   .social-networks__grid {
     grid-template-columns: repeat(8, 1fr);
   }
+
+  .card__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (width >= 64rem) {

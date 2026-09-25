@@ -21,126 +21,19 @@
     <header class="site-header">
       <div class="site-header__nav wrapper">
         <a href="index.html" class="site-header__logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 320 80"
-            width="100%"
-            height="100%"
-            fill="none"
-            role="img"
-            aria-label="Leonardo Sandoval - Dev Portfolio"
-          >
-            <!-- Símbolo / Isotipo -->
-            <g class="logo-mark">
-              <rect
-                x="6"
-                y="10"
-                width="60"
-                height="60"
-                rx="16"
-                fill="#0f172a"
-                stroke="#1e293b"
-                stroke-width="1.5"
-              />
-              <rect
-                x="6"
-                y="10"
-                width="60"
-                height="60"
-                rx="16"
-                fill="url(#brand-glow)"
-                opacity="0.15"
-              />
-              <rect
-                x="6"
-                y="10"
-                width="60"
-                height="60"
-                rx="16"
-                stroke="url(#accent-border)"
-                stroke-width="1.5"
-              />
-
-              <!-- Chevrons y slash </> -->
-              <path
-                d="M25 50L17 40L25 30"
-                stroke="#38bdf8"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M33 26L39 54"
-                stroke="#06b6d4"
-                stroke-width="3"
-                stroke-linecap="round"
-              />
-              <path
-                d="M47 30L55 40L47 50"
-                stroke="#38bdf8"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </g>
-
-            <!-- Tipografía -->
-            <text
-              x="82"
-              y="44"
-              font-family="'Plus Jakarta Sans', system-ui, sans-serif"
-              font-size="25"
-              font-weight="800"
-              fill="#f8fafc"
-              letter-spacing="-0.6"
-            >
-              Leonardo
-              <tspan fill="#38bdf8">.</tspan>
-            </text>
-            <text
-              x="83"
-              y="61"
-              font-family="'Plus Jakarta Sans', system-ui, sans-serif"
-              font-size="11"
-              font-weight="700"
-              fill="#94a3b8"
-              letter-spacing="2"
-            >
-              DEV PORTFOLIO
-            </text>
-
-            <!-- Gradientes -->
-            <defs>
-              <linearGradient
-                id="brand-glow"
-                x1="6"
-                y1="10"
-                x2="66"
-                y2="70"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#38bdf8" />
-                <stop offset="1" stop-color="#06b6d4" stop-opacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="accent-border"
-                x1="6"
-                y1="10"
-                x2="66"
-                y2="70"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#38bdf8" />
-                <stop offset="1" stop-color="#1e293b" />
-              </linearGradient>
-            </defs>
-          </svg>
+          <img
+            src="./assets/images/logo.svg"
+            alt="Logo de Leonardo Sandoval"
+            width="48"
+            height="48"
+            class="site-header__logo--image"
+          />
         </a>
         <nav aria-label="Navegación principal">
-          <ul class="nav__list">
-            <li><a href="#sobre-mi" class="nav__item">Sobre mí</a></li>
-            <li><a href="#proyectos" class="nav__item">Proyectos</a></li>
-            <li><a href="#contacto" class="nav__item">Contacto</a></li>
+          <ul class="site-header__nav--list">
+            <li><a href="#sobre-mi" class="nav--list__link">Sobre mí</a></li>
+            <li><a href="#proyectos" class="nav--list__link">Proyectos</a></li>
+            <li><a href="#contacto" class="nav--list__link">Contacto</a></li>
           </ul>
         </nav>
       </div>
@@ -149,13 +42,15 @@
       <section class="wrapper" id="hero">
         <div class="hero__grid">
           <div class="hero__copy">
-            <p class="hero__eyebrow">👋 Hola, soy</p>
+            <p class="hero__eyebrow surface--low">
+              <span aria-hidden="true">👋</span>Hola, soy
+            </p>
             <h1 class="hero__title">
-              Leonardo <span class="title-accent">Sandoval</span>
+              Leonardo <span class="u-text-gradient">Sandoval</span>
             </h1>
             <p class="hero__role">
-              <span class="text-accent">Desarrollador en formación en</span>
-              <span class="text-accent--underline"
+              <span class="u-text-accent">Desarrollador en formación en</span>
+              <span class="u-text-underline"
                 >Ingeniería en Sistemas Computacionales</span
               >
             </p>
@@ -164,8 +59,8 @@
               Desarrollo aplicaciones móviles y sitios web, con experiencia en
               Android, iOS y tecnologías web como HTML, CSS y JavaScript.
             </p>
-            <div class="hero__buttons">
-              <a href="#proyectos" class="btn btn-primary"
+            <div class="hero__buttons u-uppercase">
+              <a href="#proyectos" class="btn btn--primary"
                 >ver proyectos
                 <i
                   data-lucide="arrow-down"
@@ -173,7 +68,9 @@
                   aria-hidden="true"
                 ></i
               ></a>
-              <a href="#sobre-mi" class="btn btn-secondary btn--hidden-mobile"
+              <a
+                href="#sobre-mi"
+                class="btn btn--secondary u-hidden-mobile u-hover-accent"
                 >sobre mí<i
                   data-lucide="user-round"
                   class="btn-icon"
@@ -182,10 +79,13 @@
               </a>
               <a
                 href="#contacto"
-                class="btn btn-accent--primary"
-                aria-hidden="true"
+                class="btn btn-transparent u-hover-accent--primary"
               >
-                contactar<i data-lucide="mail" class="btn-icon"></i>
+                contactar<i
+                  data-lucide="mail"
+                  class="btn-icon"
+                  aria-hidden="true"
+                ></i>
               </a>
             </div>
           </div>
@@ -197,14 +97,16 @@
               height="1254"
               class="hero__image"
             />
-            <span class="hero__badge">💻 Disponible para proyectos</span>
+            <span class="hero__badge surface--low" aria-hidden="true"
+              >💻 Disponible para proyectos</span
+            >
           </div>
         </div>
       </section>
-      <section class="wrapper content__grid" id="about-me">
+      <section class="wrapper content__grid" id="sobre-mi">
         <div class="about__content">
           <h2 class="subtitle">Sobre mí</h2>
-          <div class="background-content--low">
+          <div class="surface-card">
             <p>
               Soy estudiante de
               <strong>Ingeniería en Sistemas Computacionales</strong> en la
@@ -230,22 +132,22 @@
           <h2 class="subtitle">Tecnologías & Stack</h2>
           <h3>Lenguajes</h3>
           <ul class="skills__list">
-            <li class="skills__item">Java</li>
-            <li class="skills__item">Kotlin</li>
-            <li class="skills__item">Objective-C</li>
-            <li class="skills__item">Swift</li>
-            <li class="skills__item">JavaScript</li>
+            <li class="tag">Java</li>
+            <li class="tag">Kotlin</li>
+            <li class="tag">Objective-C</li>
+            <li class="tag">Swift</li>
+            <li class="tag">JavaScript</li>
           </ul>
           <h3>Desarrollo</h3>
           <ul class="skills__list">
-            <li class="skills__item">Android Studio</li>
-            <li class="skills__item">iOS</li>
-            <li class="skills__item">HTML & CSS</li>
+            <li class="tag">Android Studio</li>
+            <li class="tag">iOS</li>
+            <li class="tag">HTML & CSS</li>
           </ul>
           <h3>Herramientas</h3>
           <ul class="skills__list">
-            <li class="skills__item">Git</li>
-            <li class="skills__item">GitHub</li>
+            <li class="tag">Git</li>
+            <li class="tag">GitHub</li>
           </ul>
         </div>
       </section>
@@ -259,9 +161,9 @@
               width="3200"
               height="2400"
               loading="lazy"
-              class="card--image"
+              class="card__image"
             />
-            <div class="card--content">
+            <div class="card__content">
               <h3>Vaccination Landing Page</h3>
               <p>
                 Página desarrollada como práctica de maquetación y diseño
@@ -269,16 +171,16 @@
                 adaptación a diferentes tamaños de pantalla.
               </p>
             </div>
-            <div class="card--skills">
+            <div class="tag-list">
               <ul class="skills__list">
-                <li class="skills__item">HTML</li>
-                <li class="skills__item">CSS</li>
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
               </ul>
             </div>
-            <div class="card--buttons">
+            <div class="card__actions">
               <a
                 href="https://dsan-io.github.io/vaccine_kataCSS/"
-                class="btn btn-primary btn-primary-card"
+                class="btn btn--primary btn--primary-card"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Ver proyecto
@@ -290,7 +192,7 @@
               </a>
               <a
                 href="https://github.com/dsan-io/vaccine_kataCSS"
-                class="btn btn-secondary-card btn-accent--secondary"
+                class="btn btn--secondary-card btn--secondary u-hover-accent"
                 target="_blank"
                 rel="noopener noreferrer"
                 ><i
@@ -308,9 +210,9 @@
               width="704"
               height="440"
               loading="lazy"
-              class="card--image"
+              class="card__image"
             />
-            <div class="card--content">
+            <div class="card__content">
               <h3>TaskFlow Android App</h3>
               <p>
                 Aplicación nativa para la organización de actividades y rutinas
@@ -318,24 +220,24 @@
                 MVVM y notificaciones push programadas.
               </p>
             </div>
-            <div class="card--skills">
+            <div class="tag-list">
               <ul class="skills__list">
-                <li class="skills__item">Kotlin</li>
-                <li class="skills__item">Jetpack Compose</li>
-                <li class="skills__item">SQLite</li>
+                <li class="tag">Kotlin</li>
+                <li class="tag">Jetpack Compose</li>
+                <li class="tag">SQLite</li>
               </ul>
             </div>
-            <div class="card--buttons">
+            <div class="card__actions">
               <a
                 href="#"
-                class="btn btn-primary-card btn-secondary--inactive btn-accent--secondary"
+                class="btn btn--primary-card btn--secondary u-hover-accent"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Demo APK</a
               >
               <a
                 href="#"
-                class="btn btn-secondary-card btn-accent--secondary"
+                class="btn btn--secondary-card btn--secondary u-hover-accent"
                 target="_blank"
                 rel="noopener noreferrer"
                 ><i
@@ -353,9 +255,9 @@
               width="704"
               height="440"
               loading="lazy"
-              class="card--image"
+              class="card__image"
             />
-            <div class="card--content">
+            <div class="card__content">
               <h3>iOS Budget & Finance Tracker</h3>
               <p>
                 Control de finanzas personales, categorización de presupuestos y
@@ -363,23 +265,23 @@
                 Interface Guidelines de Apple.
               </p>
             </div>
-            <div class="card--skills">
+            <div class="tag-list">
               <ul class="skills__list">
-                <li class="skills__item">Swift</li>
-                <li class="skills__item">SwiftUI</li>
+                <li class="tag">Swift</li>
+                <li class="tag">SwiftUI</li>
               </ul>
             </div>
-            <div class="card--buttons">
+            <div class="card__actions">
               <a
                 href="#"
-                class="btn btn-primary-card btn-secondary--inactive btn-accent--primary"
+                class="btn btn--primary-card btn--secondary u-hover-accent--primary"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Detalles</a
               >
               <a
                 href="#"
-                class="btn btn-secondary-card btn-accent--secondary"
+                class="btn btn--secondary-card btn--secondary u-hover-accent"
                 target="_blank"
                 rel="noopener noreferrer"
                 ><i
@@ -393,7 +295,7 @@
         </div>
       </section>
       <section class="wrapper" id="contacto">
-        <div class="social-networks__grid background-content--low">
+        <div class="social-networks__grid surface-card">
           <div class="social-networks__content">
             <h2 class="subtitle">Contacto</h2>
             <p>
@@ -405,19 +307,19 @@
             <h3>Redes de Contacto:</h3>
             <div class="social-networks__list">
               <a
-                class="social-networks__item interactive btn-accent--secondary item-content__link"
+                class="social-networks__item surface--low interactive u-hover-accent item-content__link"
                 href="https://github.com/dsan-io"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div class="item-icon">
+                <div class="social-networks__icon">
                   <i
                     data-lucide="square-code"
                     class="icon-accent--secondary"
                   ></i>
                 </div>
-                <div class="item-content">
-                  <span class="item-content__label">GitHub</span>
+                <div class="social-networks__body">
+                  <span class="social-networks__body--label">GitHub</span>
                   dsan-io
                 </div>
                 <div>
@@ -429,19 +331,19 @@
                 </div>
               </a>
               <a
-                class="social-networks__item interactive btn-accent--primary item-content__link"
+                class="social-networks__item surface--low interactive u-hover-accent--primary item-content__link"
                 href="https://linkedin.com/in/leonardosandoval"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div class="item-icon">
+                <div class="social-networks__icon">
                   <i
                     data-lucide="briefcase-business"
                     class="icon-accent--primary"
                   ></i>
                 </div>
-                <div class="item-content">
-                  <span class="item-content__label">LinkedIn</span>
+                <div class="social-networks__body">
+                  <span class="social-networks__body--label">LinkedIn</span>
                   in/leonardosandoval
                 </div>
                 <div>
@@ -453,17 +355,17 @@
                 </div>
               </a>
 
-              <div class="social-networks__item">
-                <div class="item-icon">
+              <div class="social-networks__item surface--low">
+                <div class="social-networks__icon">
                   <i data-lucide="mail" class="icon-accent--success"></i>
                 </div>
-                <div class="item-content">
-                  <span class="item-content__label">Email</span>
+                <div class="social-networks__body">
+                  <span class="social-networks__body--label">Email</span>
                   <a href="mailto:l.sandoval.dev@gmail.com" class="email__label"
                     >l.sandoval.dev@gmail.com</a
                   >
                 </div>
-                <button class="item-btn">
+                <button class="social-networks__copy">
                   <i
                     data-lucide="clipboard"
                     class="icon-copy"
@@ -483,7 +385,7 @@
       <p>&copy; 2026 Leonardo Sandoval. Todos los derechos reservados.</p>
     </footer>
     <script src="https://unpkg.com/lucide@1.47.0"></script>
-    <script defer>
+    <script>
       lucide.createIcons();
     </script>
   </body>

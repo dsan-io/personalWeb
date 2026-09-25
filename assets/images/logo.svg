@@ -1,0 +1,114 @@
+<svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 80"
+            width="100%"
+            height="100%"
+            fill="none"
+            role="img"
+            aria-label="Leonardo Sandoval - Dev Portfolio"
+          >
+            <!-- Símbolo / Isotipo -->
+            <g class="logo-mark">
+              <rect
+                x="6"
+                y="10"
+                width="60"
+                height="60"
+                rx="16"
+                fill="#0f172a"
+                stroke="#1e293b"
+                stroke-width="1.5"
+              />
+              <rect
+                x="6"
+                y="10"
+                width="60"
+                height="60"
+                rx="16"
+                fill="url(#brand-glow)"
+                opacity="0.15"
+              />
+              <rect
+                x="6"
+                y="10"
+                width="60"
+                height="60"
+                rx="16"
+                stroke="url(#accent-border)"
+                stroke-width="1.5"
+              />
+
+              <!-- Chevrons y slash </> -->
+              <path
+                d="M25 50L17 40L25 30"
+                stroke="#38bdf8"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M33 26L39 54"
+                stroke="#06b6d4"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M47 30L55 40L47 50"
+                stroke="#38bdf8"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+
+            <!-- Tipografía -->
+            <text
+              x="82"
+              y="44"
+              font-family="'Plus Jakarta Sans', system-ui, sans-serif"
+              font-size="25"
+              font-weight="800"
+              fill="#f8fafc"
+              letter-spacing="-0.6"
+            >
+              Leonardo
+              <tspan fill="#38bdf8">.</tspan>
+            </text>
+            <text
+              x="83"
+              y="61"
+              font-family="'Plus Jakarta Sans', system-ui, sans-serif"
+              font-size="11"
+              font-weight="700"
+              fill="#94a3b8"
+              letter-spacing="2"
+            >
+              DEV PORTFOLIO
+            </text>
+
+            <!-- Gradientes -->
+            <defs>
+              <linearGradient
+                id="brand-glow"
+                x1="6"
+                y1="10"
+                x2="66"
+                y2="70"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#38bdf8" />
+                <stop offset="1" stop-color="#06b6d4" stop-opacity="0" />
+              </linearGradient>
+              <linearGradient
+                id="accent-border"
+                x1="6"
+                y1="10"
+                x2="66"
+                y2="70"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#38bdf8" />
+                <stop offset="1" stop-color="#1e293b" />
+              </linearGradient>
+            </defs>
+          </svg>

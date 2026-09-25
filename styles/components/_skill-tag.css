@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-.skills__item {
+.tag {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   background-color: var(--color-bg-surface);

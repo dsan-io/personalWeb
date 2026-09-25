@@ -2,10 +2,10 @@
 :root {
   /* Slate — superficies y texto neutro */
   --c-slate-975: #0a0f1d; /* canvas base (nuevo, el fondo más profundo) */
-  --c-slate-950: #0f172a; /* surface layer */
-  --c-slate-900: #16213b;
-  --c-slate-800: #1e293b; /* surface elevated / hover */
-  --c-slate-700: #334155; /* border definition */
+  --c-slate-950: #0f172a;
+  --c-slate-900: #16213b; /* surface layer */
+  --c-slate-800: #1e293b; /* surface elevated  */
+  --c-slate-700: #334155; /* border definition / hover */
   --c-slate-500: #64748b; /* texto muted (nuevo) */
   --c-slate-400: #94a3b8; /* texto secundario */
 
@@ -43,9 +43,9 @@
   --color-btn-text: var(--c-slate-975);
   --color-btn-bg--hover: var(--c-cyan-500);
 
-  --color-btn-secondary-text: var(--c-white);
-  --color-btn-secondary-bg: var(--c-slate-800);
-  --color-btn-secondary-border--hover: var(--c-slate-700);
+  --color-btn--secondary-text: var(--c-white);
+  --color-btn--secondary-bg: var(--c-slate-800);
+  --color-btn--secondary-bg--hover: var(--c-slate-700);
 
   /* ---------- Text ---------- */
 

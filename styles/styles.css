@@ -10,6 +10,7 @@
 @import url("./components/_button.css") layer(components);
 @import url("./components/_card.css") layer(components);
 @import url("./components/_skill-tag.css") layer(components);
+@import url("./components/_surface.css") layer(components);
 
 @import url("./utilities/_utilities.css") layer(utilities);
 

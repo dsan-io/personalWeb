@@ -2,6 +2,11 @@ main {
   background-color: var(--color-bg-canvas-layer);
 }
 
+.site-header__logo--image {
+  width: 100%;
+  height: auto;
+}
+
 .hero__visual {
   order: -1;
 }
@@ -10,29 +15,9 @@ main {
   margin: 0 0 1rem 0;
 }
 
-.title-accent {
-  background: linear-gradient(to left, #f8fafc, #38bdf8 50%, #87ceeb 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
 .hero__role {
   font-size: var(--fs-18);
   margin: 0;
-}
-
-.text-accent {
-  color: var(--color-accent-text);
-  font-weight: 600;
-}
-
-.text-accent--underline {
-  color: var(--color-text-primary);
-  font-weight: 600;
-  text-decoration: underline;
-  text-decoration-color: var(--color-accent-text);
-  text-underline-offset: 0.2rem;
 }
 
 .hero__eyebrow {
@@ -41,7 +26,6 @@ main {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-size: var(--fs-14);
-  background: var(--color-bg-surface-low);
   border-radius: 9999px;
   width: fit-content;
   padding: 0.25rem 0.75rem;
@@ -51,7 +35,6 @@ main {
   position: absolute;
   bottom: 0rem;
   left: 8rem;
-  background-color: var(--color-bg-surface-low);
   color: var(--color-text-primary);
   padding: 0.5rem 1rem;
   border-radius: 2rem;
@@ -61,6 +44,7 @@ main {
 }
 
 .hero__image {
+  width: 100%;
   height: auto;
   aspect-ratio: 1 / 1;
   border-radius: 1rem;
@@ -70,7 +54,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  text-transform: uppercase;
 }
 
 .social-networks__item {
@@ -78,19 +61,35 @@ main {
   align-items: center;
   gap: 1rem;
   width: 100%;
-  background-color: var(--color-bg-surface-low);
   border-radius: 0.5rem;
   padding: 1.5rem 1.5rem;
   margin-bottom: 1rem;
 }
 
-.item-icon {
+.subtitle {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 1.4rem;
+  margin-right: 0.5rem;
+  background-color: var(--c-sky-300);
+  border-radius: 9999px;
+  vertical-align: middle;
+}
+
+.social-networks__icon {
   padding: 0.5rem;
   border-radius: 0.5rem;
   background-color: var(--color-bg-canvas);
 }
 
-.item-content {
+.social-networks__body {
   color: var(--color-text-primary);
   font-weight: 700;
   flex: 1;
@@ -99,7 +98,7 @@ main {
   align-items: flex-start;
 }
 
-.item-content__label {
+.social-networks__body--label {
   color: var(--color-text-secondary);
   font-weight: 600;
   font-size: var(--fs-14);

@@ -25,8 +25,7 @@
   --font-size-label-sm: var(--fs-12); /* etiquetas pequeñas */
   --font-size-code: var(--fs-13); /* fragmentos de código inline */
 
-  @media (width >= calc(600 / 16 * 1rem)) {
-    --font-size-topnav: var(--fs-14);
+  @media (width >= calc(640 / 16 * 1rem)) {
     --font-size-h1: var(--fs-56); /* display-hero */
     --font-size-h2: var(--fs-36); /* headline-xl */
     --font-size-p: var(

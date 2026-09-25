@@ -1,0 +1,10 @@
+.surface-card {
+  background-color: var(--color-bg-canvas-lowest);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+}
+
+.surface--low {
+  background-color: var(--color-bg-surface-low);
+}
