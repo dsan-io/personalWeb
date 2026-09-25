@@ -6,14 +6,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 4rem;
+  gap: var(--space-section-compact);
   padding: 1.2rem 2rem;
   flex-wrap: wrap;
 }
 
 .site-header__nav--list {
   display: flex;
-  gap: 2rem;
+  gap: var(--space-content);
 }
 
 .nav--list__link {

@@ -1,14 +1,14 @@
 .skills__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: var(--space-content-group);
   padding: 0;
 }
 
 .tag {
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  background-color: var(--color-bg-surface);
+  border-radius: var(--radius-default);
+  background-color: var(--color-bg-surface-low);
   color: var(--color-text-secondary);
   font-weight: 600;
 }

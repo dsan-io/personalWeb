@@ -1,16 +1,16 @@
 :root {
-  --gutter: 1rem;
+  --gutter: var(--space-page-gutter); /* 16px — mobile */
 }
 
 @media (width >= 40rem) {
   :root {
-    --gutter: 1.5rem;
+    --gutter: var(--space-page-gutter-tablet); /* 24px — tablet */
   }
 }
 
 @media (width >= 64rem) {
   :root {
-    --gutter: 2rem;
+    --gutter: var(--space-page-gutter-desktop); /* 32px — tablet/desktop */
   }
 }
 
@@ -20,15 +20,15 @@
 }
 
 section + section {
-  margin-top: 6rem;
+  margin-top: var(--space-section);
 }
 
 main > section:first-child {
-  margin-top: 6rem; /* o el valor que uses respecto al header */
+  margin-top: var(--space-section); /* o el valor que uses respecto al header */
 }
 
 main > section:last-child {
-  margin-bottom: 6rem; /* o el valor respecto al footer */
+  margin-bottom: var(--space-section); /* o el valor respecto al footer */
 }
 
 .hero__grid,
@@ -36,13 +36,13 @@ main > section:last-child {
 .social-networks__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  gap: var(--space-content-group);
 }
 
 .card__grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
+  gap: var(--space-content-group);
 }
 
 .hero__grid {
@@ -77,7 +77,7 @@ main > section:last-child {
   .social-networks__grid {
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
-    gap: 3rem;
+    gap: var(--space-xl);
   }
 
   .card__grid {

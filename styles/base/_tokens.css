@@ -2,8 +2,8 @@
 :root {
   /* Slate — superficies y texto neutro */
   --c-slate-975: #0a0f1d; /* canvas base (nuevo, el fondo más profundo) */
-  --c-slate-950: #0f172a;
-  --c-slate-900: #16213b; /* surface layer */
+  --c-slate-950: #0f172a; /* surface layer */
+  --c-slate-900: #16213b;
   --c-slate-800: #1e293b; /* surface elevated  */
   --c-slate-700: #334155; /* border definition / hover */
   --c-slate-500: #64748b; /* texto muted (nuevo) */
@@ -15,8 +15,6 @@
   /* Sky — acento primario */
   --c-sky-300: #87ceeb;
   --c-sky-400: #38bdf8;
-  --c-sky-600: #0284c7;
-  --c-sky-700: #0369a1;
 
   /* Cyan — acento secundario (nuevo) */
   --c-cyan-500: #06b6d4;
@@ -31,8 +29,8 @@
   /* ---------- Canvas ---------- */
 
   --color-bg-canvas: var(--c-slate-975);
-  --color-bg-canvas-layer: var(--c-slate-950);
-  --color-bg-canvas-lowest: var(--c-slate-900);
+  --color-bg-canvas-layer: var(--c-slate-900);
+  --color-bg-canvas-lowest: var(--c-slate-950);
 
   --color-bg-surface-low: var(--c-slate-800); /*bg card*/
   --color-bg-surface: var(--c-slate-700); /*tag, border*/
@@ -55,10 +53,61 @@
 
   --color-accent-text: var(--c-sky-300);
   --color-accent-primary: var(--c-sky-400);
-  --color-accent-primary--hover: var(--c-sky-700);
+  --color-accent-primary--hover: var(--c-sky-400);
   --color-accent-secondary: var(--c-cyan-500);
 
   --color-status-success: var(--c-emerald-500);
   --color-status-error: var(--c-red-300);
   --color-status-error--bg: var(--c-red-900);
+}
+
+/* ---------- Spacing ---------- */
+:root {
+  --space-xxs: 0.25rem; /* 4px */
+  --space-xs: 0.5rem; /* 8px */
+  --space-sm: 0.75rem; /* 12px */
+  --space-md: 1rem; /* 16px */
+  --space-lg: 1.5rem; /* 24px */
+  --space-xl: 2rem; /* 32px */
+  --space-2xl: 3rem; /* 48px */
+  --space-3xl: 4.5rem; /* 72px */
+  --space-4xl: 6rem; /* 96px */
+
+  /* ---------- Border radius ---------- */
+  --rounded-sm: 0.25rem;
+  --rounded-default: 0.5rem;
+  --rounded-md: 0.75rem;
+  --rounded-lg: 1rem;
+  --rounded-xl: 1.5rem;
+  --rounded-full: 9999px;
+}
+
+:root {
+  /* ---------- Semantic spacing ---------- */
+
+  --space-section: var(--space-4xl); /* 96px — separación entre secciones */
+  --space-section-compact: var(--space-3xl); /* 72px */
+
+  --space-content: var(--space-lg); /* 24px — contenido de cards */
+  --space-content-group: var(--space-md); /* 16px — headline → body */
+
+  --space-component: var(--space-sm); /* 12px — grupos de botones */
+  --space-component-tight: var(--space-xs); /* 8px */
+
+  --space-inline: var(--space-xs); /* 8px */
+  --space-inline-tight: var(--space-xxs); /* 4px */
+
+  --space-page-gutter: var(--space-md); /* 16px — mobile */
+  --space-page-gutter-tablet: var(--space-lg); /* 24px — tablet */
+  --space-page-gutter-desktop: var(--space-xl); /* 32px — tablet/desktop */
+
+  /* ---------- Semantic border radius ---------- */
+
+  --radius-control: var(--rounded-md); /* 12px */
+  --radius-card: var(--rounded-lg); /* 16px */
+  --radius-avatar: var(--rounded-xl); /* 24px */
+  --radius-pill: var(--rounded-full); /* 9999px */
+
+  --radius-sm: var(--rounded-sm); /* 4px */
+  --radius-default: var(--rounded-default); /* 8px */
 }

@@ -12,7 +12,7 @@ main {
 }
 
 .hero__title {
-  margin: 0 0 1rem 0;
+  margin-bottom: var(--space-content-group);
 }
 
 .hero__role {
@@ -25,8 +25,8 @@ main {
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-size: var(--fs-14);
-  border-radius: 9999px;
+  font-size: var(--fs-14); /* USE: Semantic typography token ? */
+  border-radius: var(--radius-pill);
   width: fit-content;
   padding: 0.25rem 0.75rem;
 }
@@ -37,7 +37,7 @@ main {
   left: 8rem;
   color: var(--color-text-primary);
   padding: 0.5rem 1rem;
-  border-radius: 2rem;
+  border-radius: var(--radius-avatar);
   font-size: var(--fs-14);
   font-weight: 600;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -47,23 +47,23 @@ main {
   width: 100%;
   height: auto;
   aspect-ratio: 1 / 1;
-  border-radius: 1rem;
+  border-radius: var(--radius-card);
 }
 
 .hero__buttons {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--space-component);
 }
 
 .social-networks__item {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: var(--space-component);
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: var(--radius-default);
   padding: 1.5rem 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-content-group);
 }
 
 .subtitle {
@@ -77,15 +77,15 @@ main {
   display: inline-block;
   width: 0.5rem;
   height: 1.4rem;
-  margin-right: 0.5rem;
+  margin-right: var(--space-inline);
   background-color: var(--c-sky-300);
-  border-radius: 9999px;
+  border-radius: var(--radius-pill);
   vertical-align: middle;
 }
 
 .social-networks__icon {
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+  padding: var(--space-inline);
+  border-radius: var(--radius-default);
   background-color: var(--color-bg-canvas);
 }
 
@@ -105,7 +105,7 @@ main {
 }
 
 .footer {
-  padding: 1rem;
+  padding: var(--space-content-group);
 }
 
 @media (width >= 64rem) {
@@ -115,8 +115,8 @@ main {
 
   .hero__buttons {
     display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: var(--space-component);
+    margin-top: var(--space-xl);
     flex-direction: row;
   }
 }
