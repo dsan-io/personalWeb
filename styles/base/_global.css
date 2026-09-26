@@ -43,6 +43,7 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(12px);
   border: 1px solid #10b9814d;
+  background-color: #0f172a99;
 }
 
 .hero__image {
@@ -117,7 +118,7 @@ main {
 
   .hero__buttons {
     display: flex;
-    gap: var(--space-component);
+    gap: var(--space-sm);
     margin-top: var(--space-xl);
     flex-direction: row;
   }
