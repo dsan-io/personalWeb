@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   gap: var(--space-section-compact);
-  padding: 1.2rem 2rem;
+  padding: var(--space-lg) var(--space-xl);
   flex-wrap: wrap;
 }
 

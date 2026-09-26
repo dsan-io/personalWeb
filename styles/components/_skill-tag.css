@@ -6,7 +6,7 @@
 }
 
 .tag {
-  padding: 0.5rem 1rem;
+  padding: var(--space-xs) var(--space-md);
   border-radius: var(--radius-default);
   background-color: var(--color-bg-surface-low);
   color: var(--color-text-secondary);

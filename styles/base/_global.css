@@ -28,7 +28,7 @@ main {
   font-size: var(--fs-14); /* USE: Semantic typography token ? */
   border-radius: var(--radius-pill);
   width: fit-content;
-  padding: 0.25rem 0.75rem;
+  padding: var(--space-xs) var(--space-sm);
 }
 
 .hero__badge {
@@ -36,11 +36,13 @@ main {
   bottom: 0rem;
   left: 8rem;
   color: var(--color-text-primary);
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-avatar);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-pill);
   font-size: var(--fs-14);
   font-weight: 600;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  border: 1px solid #10b9814d;
 }
 
 .hero__image {
@@ -62,7 +64,7 @@ main {
   gap: var(--space-component);
   width: 100%;
   border-radius: var(--radius-default);
-  padding: 1.5rem 1.5rem;
+  padding: var(--space-lg);
   margin-bottom: var(--space-content-group);
 }
 

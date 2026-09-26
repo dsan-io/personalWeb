@@ -2,8 +2,8 @@
 :root {
   /* Slate — superficies y texto neutro */
   --c-slate-975: #0a0f1d; /* canvas base (nuevo, el fondo más profundo) */
-  --c-slate-950: #0f172a; /* surface layer */
-  --c-slate-900: #16213b;
+  --c-slate-950: #0f172a;
+  --c-slate-900: #16213b; /* surface layer */
   --c-slate-800: #1e293b; /* surface elevated  */
   --c-slate-700: #334155; /* border definition / hover */
   --c-slate-500: #64748b; /* texto muted (nuevo) */

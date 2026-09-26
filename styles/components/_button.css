@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-component-tight);
-  padding: 1rem 1.5rem;
+  padding: var(--space-md) var(--space-lg);
   border-radius: var(--radius-default);
   text-decoration: none;
   transition: 0.3s ease;
@@ -42,7 +42,7 @@
 }
 
 .btn--secondary-card {
-  padding: 1rem 0.5rem;
+  padding: var(--space-md) var(--space-xs);
 }
 
 .btn-icon {
@@ -78,7 +78,7 @@
 .social-networks__copy {
   display: flex;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: var(--space-xs) var(--space-md);
   gap: var(--space-component-tight);
   color: var(--color-text-secondary);
   background-color: var(--color-bg-canvas);
