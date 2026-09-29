@@ -43,7 +43,7 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(12px);
   border: 1px solid #10b9814d;
-  background-color: #0f172a99;
+  background-color: rgba(15, 23, 42, 0.6);
 }
 
 .hero__image {
@@ -56,7 +56,7 @@ main {
 .hero__buttons {
   display: flex;
   flex-direction: column;
-  gap: var(--space-component);
+  gap: var(--space-content);
 }
 
 .social-networks__item {

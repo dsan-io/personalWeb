@@ -29,8 +29,8 @@
   /* ---------- Canvas ---------- */
 
   --color-bg-canvas: var(--c-slate-975);
-  --color-bg-canvas-layer: var(--c-slate-900);
-  --color-bg-canvas-lowest: var(--c-slate-950);
+  --color-bg-canvas-layer: var(--c-slate-950);
+  --color-bg-canvas-lowest: var(--c-slate-900);
 
   --color-bg-surface-low: var(--c-slate-800); /*bg card*/
   --color-bg-surface: var(--c-slate-700); /*tag, border*/
