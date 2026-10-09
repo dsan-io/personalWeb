@@ -1,10 +1,18 @@
-.surface-card {
-  background-color: var(--color-bg-canvas-lowest);
+.surface-main {
+  background-color: var(--color-bg-canvas-main);
+}
+
+.surface-layer {
+  background-color: var(--color-bg-surface-layer);
   padding: var(--space-content);
   border-radius: var(--radius-avatar);
   margin-top: var(--space-content-group);
 }
 
-.surface--low {
+.surface-elevated {
   background-color: var(--color-bg-surface-low);
+}
+
+.surface-low {
+  background-color: var(--color-bg-surface);
 }

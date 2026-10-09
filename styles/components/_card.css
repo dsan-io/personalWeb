@@ -1,5 +1,5 @@
 .card {
-  background-color: var(--color-bg-canvas-lowest);
+  background-color: var(--color-bg-surface-layer);
   border-radius: var(--radius-card);
   box-shadow: 0px 4px 6px var(--color-bg-surface);
   overflow: hidden;

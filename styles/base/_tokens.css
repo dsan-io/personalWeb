@@ -2,7 +2,7 @@
 :root {
   /* Slate — superficies y texto neutro */
   --c-slate-975: #0a0f1d; /* canvas base (nuevo, el fondo más profundo) */
-  --c-slate-950: #0f172a;
+  --c-slate-950: #0f172a; /* background main */
   --c-slate-900: #16213b; /* surface layer */
   --c-slate-800: #1e293b; /* surface elevated  */
   --c-slate-700: #334155; /* border definition / hover */
@@ -29,11 +29,11 @@
   /* ---------- Canvas ---------- */
 
   --color-bg-canvas: var(--c-slate-975);
-  --color-bg-canvas-layer: var(--c-slate-950);
-  --color-bg-canvas-lowest: var(--c-slate-900);
+  --color-bg-canvas-main: var(--c-slate-950);
 
-  --color-bg-surface-low: var(--c-slate-800); /*bg card*/
-  --color-bg-surface: var(--c-slate-700); /*tag, border*/
+  --color-bg-surface-layer: var(--c-slate-900);
+  --color-bg-surface-low: var(--c-slate-800);
+  --color-bg-surface: var(--c-slate-700);
 
   /* ---------- Buttons ---------- */
 

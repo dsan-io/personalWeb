@@ -1,7 +1,3 @@
-main {
-  background-color: var(--color-bg-canvas-layer);
-}
-
 .site-header__logo--image {
   width: 100%;
   height: auto;
@@ -25,7 +21,7 @@ main {
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-size: var(--fs-14); /* USE: Semantic typography token ? */
+  font-size: var(--fs-14);
   border-radius: var(--radius-pill);
   width: fit-content;
   padding: var(--space-xs) var(--space-sm);
