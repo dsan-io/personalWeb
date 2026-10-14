@@ -60,12 +60,12 @@ main > section:last-child {
 
 @media (width >= 40rem) {
   .hero__grid,
-  .content__grid,
   .social-networks__grid {
     grid-template-columns: repeat(8, 1fr);
   }
 
-  .card__grid {
+  .card__grid,
+  .content__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }

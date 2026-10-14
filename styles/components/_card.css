@@ -1,23 +1,29 @@
 .card {
-  background-color: var(--color-bg-surface-layer);
-  border-radius: var(--radius-card);
-  box-shadow: 0px 4px 6px var(--color-bg-surface);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
   overflow: hidden;
 }
 
-.card__content,
-.tag-list,
-.card__actions {
-  padding: var(--space-content);
+.card > .card__actions {
+  margin-top: auto;
+}
+
+.card__description,
+.tag-list {
+  padding: 0 var(--space-content);
 }
 
 .card__image {
   width: 100%;
   object-fit: cover;
   aspect-ratio: 4 / 3;
+  flex-shrink: 0;
 }
 
 .card__actions {
   display: flex;
+  padding: var(--space-content);
   gap: var(--space-component);
+  flex-wrap: nowrap;
 }

@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   gap: var(--space-content-group);
   padding: 0;
+  margin: 0;
 }
 
 .tag {
