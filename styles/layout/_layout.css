@@ -76,8 +76,17 @@ main > section:last-child {
   .card__grid,
   .social-networks__grid {
     grid-template-columns: repeat(12, 1fr);
-    align-items: center;
     gap: var(--space-xl);
+  }
+
+  .content__grid,
+  .card__grid,
+  .social-networks__grid {
+    align-items: start;
+  }
+
+  .hero__grid {
+    align-items: center;
   }
 
   .card__grid {

@@ -41,6 +41,7 @@
   left: 50%;
   bottom: -17px;
   transform: translateX(-50%);
+  max-width: calc(100% - 2 * var(--space-sm));
   width: max-content;
   text-align: center;
   padding: var(--space-sm) var(--space-md);
@@ -107,6 +108,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .social-networks__body--label {
@@ -129,14 +132,25 @@
 
 .cv-preview {
   display: block;
-  width: 100%;
   height: 270px;
+}
+
+.cv-preview__frame {
+  width: 100%;
+  height: 100%;
+  border: none;
   border-radius: var(--radius-card);
-  flex-shrink: 0;
 }
 
 .cv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-component);
   margin-top: var(--space-content-group);
+}
+
+.cv-actions > .btn {
+  flex: 1 1 12rem;
 }
 
 .footer {
