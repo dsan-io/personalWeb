@@ -54,18 +54,18 @@ main > section:last-child {
 .about__content,
 .about__skills,
 .social-networks__content,
-.social-networks__form {
+.social-networks__cv {
   grid-column: 1 / -1; /* Mobile y Tablet: columna completa por defecto */
 }
 
 @media (width >= 40rem) {
-  .hero__grid,
-  .social-networks__grid {
+  .hero__grid {
     grid-template-columns: repeat(8, 1fr);
   }
 
   .card__grid,
-  .content__grid {
+  .content__grid,
+  .social-networks__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -108,7 +108,7 @@ main > section:last-child {
     grid-column: span 6;
   }
 
-  .social-networks__form {
+  .social-networks__cv {
     grid-column: span 6;
   }
 }

@@ -5,6 +5,14 @@
 
 .hero__visual {
   order: -1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__portrait {
+  position: relative;
+  width: 100%;
+  max-width: 22rem;
 }
 
 .hero__title {
@@ -29,9 +37,12 @@
 
 .hero__badge {
   position: absolute;
-  bottom: 0rem;
-  left: 8rem;
-  color: var(--color-text-primary);
+  inset-inline: auto;
+  left: 50%;
+  bottom: -17px;
+  transform: translateX(-50%);
+  width: max-content;
+  text-align: center;
   padding: var(--space-sm) var(--space-md);
   border-radius: var(--radius-pill);
   font-size: var(--fs-14);
@@ -47,6 +58,7 @@
   height: auto;
   aspect-ratio: 1 / 1;
   border-radius: var(--radius-card);
+  flex-shrink: 0;
 }
 
 .hero__buttons {
@@ -101,6 +113,30 @@
   color: var(--color-text-secondary);
   font-weight: 600;
   font-size: var(--fs-14);
+}
+
+.social-networks__cv {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.cv-preview,
+.cv-actions {
+  padding: var(--space-content);
+}
+
+.cv-preview {
+  display: block;
+  width: 100%;
+  height: 270px;
+  border-radius: var(--radius-card);
+  flex-shrink: 0;
+}
+
+.cv-actions {
+  margin-top: var(--space-content-group);
 }
 
 .footer {

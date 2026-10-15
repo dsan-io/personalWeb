@@ -92,16 +92,18 @@
             </div>
           </div>
           <div class="hero__image-wrapper hero__visual">
-            <img
-              src="./assets/images/image_profile.webp"
-              alt="Fotografía de Leonardo Sandoval"
-              width="1448"
-              height="1086"
-              class="hero__image"
-            />
-            <span class="hero__badge" aria-hidden="true"
-              >💻 Disponible para proyectos</span
-            >
+            <div class="hero__portrait">
+              <img
+                src="./assets/images/image_profile.webp"
+                alt="Fotografía de Leonardo Sandoval"
+                width="1448"
+                height="1086"
+                class="hero__image"
+              />
+              <span class="hero__badge" aria-hidden="true"
+                >💻 Disponible para proyectos</span
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -374,7 +376,34 @@
             </div>
           </div>
 
-          <div class="social-networks__form"></div>
+          <div class="social-networks__cv">
+            <h2 class="subtitle">Currículum</h2>
+            <p>
+              Puedes descargar mi currículum en formato PDF para obtener más
+              información sobre mi formación académica, experiencia y
+              habilidades técnicas.
+            </p>
+            <div class="cv-preview">
+              <iframe
+                src="./assets/cv_sandoval_leonardo.pdf"
+                title="Currículum de Leonardo Sandoval"
+                class="cv-preview"
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="cv-actions u-uppercase">
+              <a
+                href="./assets/cv_sandoval_leonardo.pdf"
+                class="btn btn--primary"
+                download
+                >Descargar CV<i
+                  data-lucide="download"
+                  class="btn-icon"
+                  aria-hidden="true"
+                ></i
+              ></a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
