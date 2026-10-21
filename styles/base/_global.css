@@ -154,7 +154,7 @@
 }
 
 .footer {
-  padding: var(--space-content-group);
+  padding: var(--space-lg) var(--space-xl);
 }
 
 @media (width >= 64rem) {
