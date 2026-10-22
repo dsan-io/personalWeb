@@ -1,7 +1,8 @@
 # 🌐 Portafolio Personal — Leonardo Sandoval
 
-![App Screenshot](https://github.com/dsan-io/personalWeb/blob/main/assets/images/webPageDesktop.webp)
-![App Screenshot](https://github.com/dsan-io/personalWeb/blob/main/assets/images/webPageMobile.webp)
+| Versión desktop | Versión mobile |
+| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/dsan-io/personalWeb/main/assets/images/webPageDesktop.webp" alt="Vista del portafolio en escritorio" width="600"> | <img src="https://raw.githubusercontent.com/dsan-io/personalWeb/main/assets/images/webPageMobile.webp" alt="Vista del portafolio en móvil" width="280"> |
 
 > ⚠️ **Proyecto en construcción.** Este sitio está en desarrollo activo y recibe mejoras continuas. Este README es provisional y se irá actualizando conforme el proyecto avance.
 
@@ -89,7 +90,7 @@ personalWeb/
 ## 📬 Contacto
 
 - **GitHub:** [dsan-io](https://github.com/dsan-io)
-- **LinkedIn:** [in/leonardosandoval](https://linkedin.com/in/leonardosandoval)
+- **LinkedIn:** [in/leonardosan](https://linkedin.com/in/leonardosan)
 - **Email:** l.sandoval.dev@gmail.com
 
 ---
