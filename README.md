@@ -78,6 +78,11 @@ personalWeb/
 ├── pnpm-lock.yaml
 └── README.md
 ```
+🌐 Demo en vivo
+
+Visita el portafolio en línea para explorar el sitio.
+
+También puedes consultar el código fuente en GitHub.
 
 ## 🚀 Cómo verlo localmente
 
