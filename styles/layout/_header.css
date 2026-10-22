@@ -1,5 +1,8 @@
 .container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) var(--space-lg);
 }
 
 .logo {
@@ -9,31 +12,45 @@
 
 nav {
   position: absolute;
-  top: 0;
+  top: -100%;
   left: 0;
-  margin-top: 70px;
+  margin-top: 90px;
   width: 100%;
   background-color: var(--color-bg-canvas);
+  z-index: 1;
+}
+
+nav.show {
+  top: 0;
+  transition: all 0.3s ease;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
   gap: var(--space-content);
-  align-items: center;
-  justify-content: center;
+  padding: 0;
 }
 
-.menu-list {
+.menu-item {
   display: flex;
-  justify-content: center;
-  margin: 0;
+  justify-content: space-between;
+  align-items: center;
   font-weight: 600;
   transition: all 0.3s ease;
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--rounded-md);
 
   &:hover {
     color: var(--color-accent-primary--hover);
+    background-color: var(--color-btn--secondary-bg--hover);
   }
+}
+
+.menu-item__content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-component);
 }
 
 @media (width >= 64rem) {
@@ -43,12 +60,16 @@ nav {
   }
 
   .container {
-    justify-content: space-between;
     align-items: center;
   }
 
   .menu {
     flex-direction: row;
     gap: var(--space-content);
+    justify-content: flex-end;
+  }
+
+  .menu-item:hover {
+    background-color: transparent;
   }
 }

@@ -12,6 +12,34 @@
   letter-spacing: 1px;
 }
 
+.btn-menu {
+  padding: var(--space-md);
+  border-radius: var(--radius-default);
+  background-color: var(--color-btn--secondary-bg);
+  color: var(--color-btn--secondary-text);
+  border: none;
+
+  &:hover {
+    color: var(--color-btn-bg--hover);
+  }
+}
+
+.btn-menu[aria-expanded="true"] .icon-close {
+  display: block;
+}
+
+.btn-menu[aria-expanded="true"] .icon-menu {
+  display: none;
+}
+
+.btn-menu[aria-expanded="false"] .icon-close {
+  display: none;
+}
+
+.btn-menu[aria-expanded="false"] .icon-menu {
+  display: block;
+}
+
 .btn--primary {
   background-color: var(--color-btn-bg);
   color: var(--color-btn-text);

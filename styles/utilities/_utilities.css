@@ -89,4 +89,8 @@
   .u-hidden-mobile {
     display: flex;
   }
+
+  .u-hidden {
+    display: none;
+  }
 }
