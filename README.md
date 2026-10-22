@@ -78,11 +78,11 @@ personalWeb/
 ├── pnpm-lock.yaml
 └── README.md
 ```
-🌐 Demo en vivo
+## 🌐 Demo en vivo
 
-Visita el portafolio en línea para explorar el sitio.
+Visita el [portafolio en línea](https://dsan-io.github.io/personalWeb/) para explorar el sitio.
 
-También puedes consultar el código fuente en GitHub.
+También puedes consultar el código fuente en [GitHub](https://github.com/dsan-io/personalWeb).
 
 ## 🚀 Cómo verlo localmente
 
