@@ -23,14 +23,14 @@ El objetivo del sitio es presentar:
 
 El proyecto está desarrollo activo. Las mejoras incorporadas incluyen:
 
-- [ ] Rediseño de la sección Hero: actualización de la fotografía, la presentación personal, los botones y la distribución del contenido.
-- [ ] Menú de navegación responsive: apertura y cierre en pantallas pequeñas, alternancia de iconos y cierre al seleccionar un enlace.
-- [ ] Mejoras de accesibilidad en la navegación: actualización de aria-expanded, cierre con la tecla Escape y devolución del foco al botón del menú.
-- [ ] Currículum integrado: vista previa del PDF y opciones para abrirlo o descargarlo.
-- [ ] Copia del correo al portapapeles: botón con confirmación visual y control del tiempo de respuesta tras pulsaciones repetidas.
-- [ ] Actualización visual: incorporación de un logotipo y ajustes en botones, tarjetas, etiquetas y superficies.
-- [ ] Organización modular de CSS: separación de estilos base, distribución, componentes y utilidades, con capas de cascada y variables de diseño.
-- [ ] Ajustes responsive: mejoras en la distribución y los espacios para diferentes tamaños de pantalla.
+- Rediseño de la sección Hero: actualización de la fotografía, la presentación personal, los botones y la distribución del contenido.
+- Menú de navegación responsive: apertura y cierre en pantallas pequeñas, alternancia de iconos y cierre al seleccionar un enlace.
+- Mejoras de accesibilidad en la navegación: actualización de aria-expanded, cierre con la tecla Escape y devolución del foco al botón del menú.
+- Currículum integrado: vista previa del PDF y opciones para abrirlo o descargarlo.
+- Copia del correo al portapapeles: botón con confirmación visual y control del tiempo de respuesta tras pulsaciones repetidas.
+- Actualización visual: incorporación de un logotipo y ajustes en botones, tarjetas, etiquetas y superficies.
+- Organización modular de CSS: separación de estilos base, distribución, componentes y utilidades, con capas de cascada y variables de diseño.
+- Ajustes responsive: mejoras en la distribución y los espacios para diferentes tamaños de pantalla.
 
 El portafolio seguirá ampliándose con nuevos proyectos y ajustes de diseño, contenido y accesibilidad.
 
