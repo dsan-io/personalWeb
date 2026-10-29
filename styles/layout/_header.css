@@ -12,15 +12,17 @@
 
 nav {
   position: absolute;
-  top: -100%;
   left: 0;
+  top: 0;
   margin-top: 90px;
   width: 100%;
   background-color: var(--color-bg-canvas);
   z-index: 1;
+  display: none;
 }
 
 nav.show {
+  display: block;
   top: 0;
   transition: all 0.3s ease;
 }
@@ -32,7 +34,7 @@ nav.show {
   padding: 0;
 }
 
-.menu-item {
+.menu-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +49,7 @@ nav.show {
   }
 }
 
-.menu-item__content {
+.menu-link__content {
   display: flex;
   align-items: center;
   gap: var(--space-component);
@@ -57,6 +59,7 @@ nav.show {
   nav {
     position: static;
     margin-top: 0;
+    display: block;
   }
 
   .container {
@@ -69,7 +72,7 @@ nav.show {
     justify-content: flex-end;
   }
 
-  .menu-item:hover {
+  .menu-link:hover {
     background-color: transparent;
   }
 }

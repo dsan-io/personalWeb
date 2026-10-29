@@ -38,11 +38,12 @@
             id="menuToggle"
             aria-controls="navMenu"
             aria-expanded="false"
+            aria-label="Botón de navegación principal"
           >
             <i
               data-lucide="menu"
               class="btn-icon icon-menu"
-              arial-hidden="true"
+              aria-hidden="true"
             ></i>
             <i
               data-lucide="x"
@@ -55,55 +56,61 @@
         <nav aria-label="Navegación principal" id="navMenu">
           <ul class="menu wrapper">
             <li class="menu-item">
-              <div class="menu-item__content">
-                <i
-                  data-lucide="user-round"
-                  class="btn-icon u-hidden"
-                  aria-hidden="true"
-                ></i
-                ><a href="#sobre-mi">Sobre mí</a>
-              </div>
-              <div>
-                <i
-                  data-lucide="arrow-right"
-                  class="interactive-arrow u-hidden"
-                  aria-hidden="true"
-                ></i>
-              </div>
+              <a href="#sobre-mi" class="menu-link">
+                <div class="menu-link__content">
+                  <i
+                    data-lucide="user-round"
+                    class="btn-icon u-hidden"
+                    aria-hidden="true"
+                  ></i
+                  >Sobre mí
+                </div>
+                <div>
+                  <i
+                    data-lucide="arrow-right"
+                    class="interactive-arrow u-hidden"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </a>
             </li>
             <li class="menu-item">
-              <div class="menu-item__content">
-                <i
-                  data-lucide="monitor-pc"
-                  class="btn-icon u-hidden"
-                  aria-hidden="true"
-                ></i
-                ><a href="#proyectos">Proyectos</a>
-              </div>
-              <div>
-                <i
-                  data-lucide="arrow-right"
-                  class="interactive-arrow u-hidden"
-                  aria-hidden="true"
-                ></i>
-              </div>
+              <a href="#proyectos" class="menu-link">
+                <div class="menu-link__content">
+                  <i
+                    data-lucide="monitor-pc"
+                    class="btn-icon u-hidden"
+                    aria-hidden="true"
+                  ></i
+                  >Proyectos
+                </div>
+                <div>
+                  <i
+                    data-lucide="arrow-right"
+                    class="interactive-arrow u-hidden"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </a>
             </li>
             <li class="menu-item">
-              <div class="menu-item__content">
-                <i
-                  data-lucide="mail"
-                  class="btn-icon u-hidden"
-                  aria-hidden="true"
-                ></i
-                ><a href="#contacto">Contacto</a>
-              </div>
-              <div>
-                <i
-                  data-lucide="arrow-right"
-                  class="interactive-arrow u-hidden"
-                  aria-hidden="true"
-                ></i>
-              </div>
+              <a href="#contacto" class="menu-link">
+                <div class="menu-link__content">
+                  <i
+                    data-lucide="mail"
+                    class="btn-icon u-hidden"
+                    aria-hidden="true"
+                  ></i
+                  >Contacto
+                </div>
+                <div>
+                  <i
+                    data-lucide="arrow-right"
+                    class="interactive-arrow u-hidden"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </a>
             </li>
           </ul>
         </nav>
@@ -266,51 +273,7 @@
                 class="btn btn--secondary-card btn--secondary u-hover-accent"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><i
-                  data-lucide="square-code"
-                  class="btn-icon card-icon"
-                  aria-hidden="true"
-                ></i>
-              </a>
-            </div>
-          </article>
-          <!-- <article class="card surface-layer-card">
-            <img
-              src="./assets/images/task-android.png"
-              alt="Imagen ilustrativa del proyecto una aplicación móvil para Android"
-              width="704"
-              height="440"
-              loading="lazy"
-              class="card__image"
-            />
-            <div class="card__description">
-              <h3>TaskFlow Android App</h3>
-              <p>
-                Aplicación nativa para la organización de actividades y rutinas
-                diarias. Integra persistencia local con Room DB, arquitectura
-                MVVM y notificaciones push programadas.
-              </p>
-            </div>
-            <div class="tag-list">
-              <ul class="skills__list">
-                <li class="tag">Kotlin</li>
-                <li class="tag">Jetpack Compose</li>
-                <li class="tag">SQLite</li>
-              </ul>
-            </div>
-            <div class="card__actions">
-              <a
-                href="#"
-                class="btn btn--primary-card btn--secondary u-hover-accent"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Demo APK</a
-              >
-              <a
-                href="#"
-                class="btn btn--secondary-card btn--secondary u-hover-accent"
-                target="_blank"
-                rel="noopener noreferrer"
+                aria-label="Ver código de Vaccination Landing Page en GitHub"
                 ><i
                   data-lucide="square-code"
                   class="btn-icon card-icon"
@@ -321,40 +284,46 @@
           </article>
           <article class="card surface-layer-card">
             <img
-              src="./assets/images/ios-proyect.png"
-              alt="Imagen ilustrativa del proyecto realizado para ecosistemas en iOS"
-              width="704"
-              height="440"
+              src="./assets/images/webPageDesktop.webp"
+              alt="Imagen ilustrativa del proyecto Portfolio Personal"
+              width="2442"
+              height="5842"
               loading="lazy"
               class="card__image"
             />
             <div class="card__description">
-              <h3>iOS Budget & Finance Tracker</h3>
+              <h3>Portfolio Personal</h3>
               <p>
-                Control de finanzas personales, categorización de presupuestos y
-                métricas interactivas creado bajo las directrices Human
-                Interface Guidelines de Apple.
+                Proyecto de portafolio personal desarrollado con HTML, CSS y
+                JavaScript. Incluye secciones de presentación, proyectos,
+                contacto y descarga de currículum.
               </p>
             </div>
             <div class="tag-list">
               <ul class="skills__list">
-                <li class="tag">Swift</li>
-                <li class="tag">SwiftUI</li>
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JavaScript</li>
               </ul>
             </div>
             <div class="card__actions">
               <a
-                href="#"
-                class="btn btn--primary-card btn--secondary u-hover-accent--primary"
+                href="https://dsan-io.github.io/personalWeb/"
+                class="btn btn--primary-card btn--secondary u-hover-accent"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Detalles</a
-              >
+                >Ver proyecto<i
+                  data-lucide="square-arrow-out-up-right"
+                  class="btn-icon"
+                  aria-hidden="true"
+                ></i
+              ></a>
               <a
-                href="#"
+                href="https://github.com/dsan-io/personalWeb"
                 class="btn btn--secondary-card btn--secondary u-hover-accent"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Ver código de Portfolio Personal en GitHub"
                 ><i
                   data-lucide="square-code"
                   class="btn-icon card-icon"
@@ -362,7 +331,7 @@
                 ></i>
               </a>
             </div>
-          </article> -->
+          </article>
         </div>
       </section>
       <section class="wrapper" id="contacto">
