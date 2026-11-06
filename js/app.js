@@ -1,12 +1,6 @@
 const navMenu = document.getElementById("navMenu");
 const menuToggle = document.getElementById("menuToggle");
 
-const copyEmailButton = document.getElementById("copyEmailButton");
-const emailText =
-  document.getElementsByClassName("email__label")[0].textContent;
-const copyText = document.querySelector("#copyEmailButton .copy-text");
-
-
 function toggleMenu() {
   navMenu.classList.toggle("show");
   menuToggle.setAttribute("aria-expanded", navMenu.classList.contains("show"));
@@ -39,27 +33,47 @@ document.addEventListener("keydown", (e) => {
 });
 
 
+// Copy email to clipboard
+
+const copyEmailButton = document.getElementById("copyEmailButton");
+const emailText =
+  document.getElementsByClassName("email__label")[0].textContent;
+const copyText = document.querySelector("#copyEmailButton .copy-text");
+
+const copyDefault = "Copiar";
+
+const copySuccess = "¡Copiado!";
+
+const copyError = "Selecciónalo";
+
+const copyFeedbackTimeout = 2000;
+
 let copyFeedbackTimeoutId;
-const copyEmail = () => {
-  navigator.clipboard
-    .writeText(emailText)
-    .then(() => {
-      clearTimeout(copyFeedbackTimeoutId);
 
-      copyText.textContent = "¡Copiado!";
+const messageStatus = function (message) {
+  clearTimeout(copyFeedbackTimeoutId);
+  copyText.textContent = message;
+  copyFeedbackTimeoutId = setTimeout(() => {
+    copyText.textContent = copyDefault;
+  }, copyFeedbackTimeout);
 
-      copyFeedbackTimeoutId = setTimeout(() => {
-        copyText.textContent = "Copiar";
-      }, 2000);
+}
 
-      console.log("Email copiado al portapapeles: ", emailText);
-    })
-    .catch((err) => {
-      console.error("Error al copiar el email: ", err);
-    });
+const copyEmail = async () => {
+
+  try {
+    if (!navigator.clipboard) {
+      throw new Error("Clipboard API no disponible");
+    }
+    await navigator.clipboard.writeText(emailText)
+    messageStatus(copySuccess);
+
+  } catch (error) {
+    messageStatus(copyError);
+    console.error("Error al acceder al portapapeles: ", error);
+  }
 };
 
 
-copyEmailButton.addEventListener("click", () => {
-  copyEmail();
-});
+
+copyEmailButton.addEventListener("click", copyEmail);
